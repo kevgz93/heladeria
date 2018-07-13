@@ -40,11 +40,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BLL\Generic\BLLGenericoImpl.cs" />
+    <Compile Include="BLL\Generic\IBLLGenerico.cs" />
+    <Compile Include="DAL\Generic\DALGenericoImpl.cs" />
+    <Compile Include="DAL\Generic\IDALGenerico.cs" />
+    <Compile Include="DAL\Generic\UnidadDeTrabajo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="BLL\" />
-    <Folder Include="DAL\" />
     <Folder Include="Model\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
