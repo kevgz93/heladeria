@@ -30,8 +30,17 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -40,15 +49,87 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BLL\Facturas\DetalleFacturaBLLImpl.cs" />
+    <Compile Include="BLL\Facturas\FacturaBLLImpl.cs" />
+    <Compile Include="BLL\Facturas\IDetalleFacturaBLL.cs" />
+    <Compile Include="BLL\Facturas\IFacturaBLL.cs" />
     <Compile Include="BLL\Generic\BLLGenericoImpl.cs" />
     <Compile Include="BLL\Generic\IBLLGenerico.cs" />
+    <Compile Include="BLL\Productos\IProductoBLL.cs" />
+    <Compile Include="BLL\Productos\ProductoBLLImpl.cs" />
+    <Compile Include="BLL\Proveedores\IProveedorBLL.cs" />
+    <Compile Include="BLL\Proveedores\ProveedorBLLImpl.cs" />
+    <Compile Include="BLL\Usuarios\IUsuarioBLL.cs" />
+    <Compile Include="BLL\Usuarios\UsuarioBLLImpl.cs" />
     <Compile Include="DAL\Generic\DALGenericoImpl.cs" />
     <Compile Include="DAL\Generic\IDALGenerico.cs" />
     <Compile Include="DAL\Generic\UnidadDeTrabajo.cs" />
+    <Compile Include="Model\HeladeriaModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HeladeriaModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\HeladeriaModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HeladeriaModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\HeladeriaModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HeladeriaModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Model\sysdiagrams.cs">
+      <DependentUpon>HeladeriaModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\T_accesos.cs">
+      <DependentUpon>HeladeriaModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\T_anulaciones.cs">
+      <DependentUpon>HeladeriaModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\T_detalle_factura.cs">
+      <DependentUpon>HeladeriaModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\T_facturas.cs">
+      <DependentUpon>HeladeriaModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\T_productos.cs">
+      <DependentUpon>HeladeriaModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\T_proveedores.cs">
+      <DependentUpon>HeladeriaModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\T_usuarios.cs">
+      <DependentUpon>HeladeriaModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Model\" />
+    <None Include="App.Config" />
+    <EntityDeploy Include="Model\HeladeriaModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>HeladeriaModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Model\HeladeriaModel.edmx.diagram">
+      <DependentUpon>HeladeriaModel.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Model\HeladeriaModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>HeladeriaModel.edmx</DependentUpon>
+      <LastGenOutput>HeladeriaModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Model\HeladeriaModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>HeladeriaModel.edmx</DependentUpon>
+      <LastGenOutput>HeladeriaModel.cs</LastGenOutput>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

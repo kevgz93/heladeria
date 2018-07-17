@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="bc1b56b4af5247639e54f56445a3157b" Name="Diagram1">
+        <EntityTypeShape EntityType="HeladeriaModel.sysdiagrams" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="HeladeriaModel.T_accesos" Width="1.5" PointX="3" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="HeladeriaModel.T_anulaciones" Width="1.5" PointX="3" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="HeladeriaModel.T_detalle_factura" Width="1.5" PointX="8.25" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="HeladeriaModel.T_facturas" Width="1.5" PointX="6" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="HeladeriaModel.T_productos" Width="1.5" PointX="3.75" PointY="9.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="HeladeriaModel.T_proveedores" Width="1.5" PointX="1.5" PointY="9.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="HeladeriaModel.T_usuarios" Width="1.5" PointX="0.75" PointY="4.25" IsExpanded="true" />
+        <AssociationConnector Association="HeladeriaModel.FK_T_accesos_T_usuarios" ManuallyRouted="false" />
+        <AssociationConnector Association="HeladeriaModel.FK_T_anulaciones_T_facturas" ManuallyRouted="false" />
+        <AssociationConnector Association="HeladeriaModel.FK_T_anulaciones_T_usuarios" ManuallyRouted="false" />
+        <AssociationConnector Association="HeladeriaModel.FK_T_detalle_factura_T_facturas" ManuallyRouted="false" />
+        <AssociationConnector Association="HeladeriaModel.FK_T_detalle_factura_T_productos" ManuallyRouted="false" />
+        <AssociationConnector Association="HeladeriaModel.FK_T_facturas_T_productos" ManuallyRouted="false" />
+        <AssociationConnector Association="HeladeriaModel.FK_T_facturas_T_usuarios" ManuallyRouted="false" />
+        <AssociationConnector Association="HeladeriaModel.FK_T_productos_T_proveedores" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

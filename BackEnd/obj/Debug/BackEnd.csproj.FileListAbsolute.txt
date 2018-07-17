@@ -1,0 +1,12 @@
+C:\Users\soporte\Documents\ProyectoAndres\heladeria\BackEnd\bin\Debug\BackEnd.dll.config
+C:\Users\soporte\Documents\ProyectoAndres\heladeria\BackEnd\bin\Debug\BackEnd.dll
+C:\Users\soporte\Documents\ProyectoAndres\heladeria\BackEnd\bin\Debug\BackEnd.pdb
+C:\Users\soporte\Documents\ProyectoAndres\heladeria\BackEnd\bin\Debug\EntityFramework.dll
+C:\Users\soporte\Documents\ProyectoAndres\heladeria\BackEnd\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\soporte\Documents\ProyectoAndres\heladeria\BackEnd\bin\Debug\EntityFramework.xml
+C:\Users\soporte\Documents\ProyectoAndres\heladeria\BackEnd\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\soporte\Documents\ProyectoAndres\heladeria\BackEnd\obj\Debug\BackEnd.csprojAssemblyReference.cache
+C:\Users\soporte\Documents\ProyectoAndres\heladeria\BackEnd\obj\Debug\BackEnd.csproj.CoreCompileInputs.cache
+C:\Users\soporte\Documents\ProyectoAndres\heladeria\BackEnd\obj\Debug\BackEnd.csproj.CopyComplete
+C:\Users\soporte\Documents\ProyectoAndres\heladeria\BackEnd\obj\Debug\BackEnd.dll
+C:\Users\soporte\Documents\ProyectoAndres\heladeria\BackEnd\obj\Debug\BackEnd.pdb

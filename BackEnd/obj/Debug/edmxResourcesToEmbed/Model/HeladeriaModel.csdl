@@ -1,0 +1,249 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="HeladeriaModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="T_accesos">
+    <Key>
+      <PropertyRef Name="id_acceso" />
+    </Key>
+    <Property Name="id_acceso" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="login" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="usuario_id" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="T_usuarios" Relationship="Self.FK_T_accesos_T_usuarios" FromRole="T_accesos" ToRole="T_usuarios" />
+  </EntityType>
+  <EntityType Name="T_anulaciones">
+    <Key>
+      <PropertyRef Name="id_anulacion" />
+    </Key>
+    <Property Name="id_anulacion" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="fecha" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="comentario" Type="String" MaxLength="60" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="factura_numero" Type="Int32" Nullable="false" />
+    <Property Name="usuario_id" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="T_facturas" Relationship="Self.FK_T_anulaciones_T_facturas" FromRole="T_anulaciones" ToRole="T_facturas" />
+    <NavigationProperty Name="T_usuarios" Relationship="Self.FK_T_anulaciones_T_usuarios" FromRole="T_anulaciones" ToRole="T_usuarios" />
+  </EntityType>
+  <EntityType Name="T_detalle_factura">
+    <Key>
+      <PropertyRef Name="id_detalle_factura" />
+    </Key>
+    <Property Name="id_detalle_factura" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="factura_numero" Type="Int32" Nullable="false" />
+    <Property Name="producto_codigo" Type="Int32" Nullable="false" />
+    <Property Name="cantidad" Type="Int32" Nullable="false" />
+    <Property Name="precio" Type="Double" Nullable="false" />
+    <NavigationProperty Name="T_facturas" Relationship="Self.FK_T_detalle_factura_T_facturas" FromRole="T_detalle_factura" ToRole="T_facturas" />
+    <NavigationProperty Name="T_productos" Relationship="Self.FK_T_detalle_factura_T_productos" FromRole="T_detalle_factura" ToRole="T_productos" />
+  </EntityType>
+  <EntityType Name="T_facturas">
+    <Key>
+      <PropertyRef Name="numero_factura" />
+    </Key>
+    <Property Name="numero_factura" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nombre" Type="String" MaxLength="35" FixedLength="false" Unicode="false" />
+    <Property Name="total" Type="Double" Nullable="false" />
+    <Property Name="descuento" Type="Double" />
+    <Property Name="fecha" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="usuario_id" Type="Int32" Nullable="false" />
+    <Property Name="producto_codigo" Type="Int32" Nullable="false" />
+    <Property Name="estado" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="T_anulaciones" Relationship="Self.FK_T_anulaciones_T_facturas" FromRole="T_facturas" ToRole="T_anulaciones" />
+    <NavigationProperty Name="T_detalle_factura" Relationship="Self.FK_T_detalle_factura_T_facturas" FromRole="T_facturas" ToRole="T_detalle_factura" />
+    <NavigationProperty Name="T_productos" Relationship="Self.FK_T_facturas_T_productos" FromRole="T_facturas" ToRole="T_productos" />
+    <NavigationProperty Name="T_usuarios" Relationship="Self.FK_T_facturas_T_usuarios" FromRole="T_facturas" ToRole="T_usuarios" />
+  </EntityType>
+  <EntityType Name="T_productos">
+    <Key>
+      <PropertyRef Name="codigo" />
+    </Key>
+    <Property Name="codigo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="categoria" Type="String" MaxLength="25" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="nombre" Type="String" MaxLength="25" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="descripcion" Type="String" MaxLength="65" FixedLength="false" Unicode="false" />
+    <Property Name="precio" Type="Double" Nullable="false" />
+    <Property Name="fecha_ingreso" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="fecha_vencimiento" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="cantidad" Type="Int32" />
+    <Property Name="estado" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="proveedor_id" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="T_detalle_factura" Relationship="Self.FK_T_detalle_factura_T_productos" FromRole="T_productos" ToRole="T_detalle_factura" />
+    <NavigationProperty Name="T_facturas" Relationship="Self.FK_T_facturas_T_productos" FromRole="T_productos" ToRole="T_facturas" />
+    <NavigationProperty Name="T_proveedores" Relationship="Self.FK_T_productos_T_proveedores" FromRole="T_productos" ToRole="T_proveedores" />
+  </EntityType>
+  <EntityType Name="T_proveedores">
+    <Key>
+      <PropertyRef Name="id_proveedor" />
+    </Key>
+    <Property Name="id_proveedor" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="cedula" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="nombre" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="direccion" Type="String" MaxLength="60" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="telefono" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="correo" Type="String" MaxLength="35" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="T_productos" Relationship="Self.FK_T_productos_T_proveedores" FromRole="T_proveedores" ToRole="T_productos" />
+  </EntityType>
+  <EntityType Name="T_usuarios">
+    <Key>
+      <PropertyRef Name="id_usuario" />
+    </Key>
+    <Property Name="id_usuario" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="cedula" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="nombre" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="apellido1" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="apellido2" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="telefono" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="correo" Type="String" MaxLength="35" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="tipo" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="sexo" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="T_accesos" Relationship="Self.FK_T_accesos_T_usuarios" FromRole="T_usuarios" ToRole="T_accesos" />
+    <NavigationProperty Name="T_anulaciones" Relationship="Self.FK_T_anulaciones_T_usuarios" FromRole="T_usuarios" ToRole="T_anulaciones" />
+    <NavigationProperty Name="T_facturas" Relationship="Self.FK_T_facturas_T_usuarios" FromRole="T_usuarios" ToRole="T_facturas" />
+  </EntityType>
+  <Association Name="FK_T_accesos_T_usuarios">
+    <End Role="T_usuarios" Type="Self.T_usuarios" Multiplicity="1" />
+    <End Role="T_accesos" Type="Self.T_accesos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="T_usuarios">
+        <PropertyRef Name="id_usuario" />
+      </Principal>
+      <Dependent Role="T_accesos">
+        <PropertyRef Name="usuario_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_T_anulaciones_T_facturas">
+    <End Role="T_facturas" Type="Self.T_facturas" Multiplicity="1" />
+    <End Role="T_anulaciones" Type="Self.T_anulaciones" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="T_facturas">
+        <PropertyRef Name="numero_factura" />
+      </Principal>
+      <Dependent Role="T_anulaciones">
+        <PropertyRef Name="factura_numero" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_T_anulaciones_T_usuarios">
+    <End Role="T_usuarios" Type="Self.T_usuarios" Multiplicity="1" />
+    <End Role="T_anulaciones" Type="Self.T_anulaciones" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="T_usuarios">
+        <PropertyRef Name="id_usuario" />
+      </Principal>
+      <Dependent Role="T_anulaciones">
+        <PropertyRef Name="usuario_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_T_detalle_factura_T_facturas">
+    <End Role="T_facturas" Type="Self.T_facturas" Multiplicity="1" />
+    <End Role="T_detalle_factura" Type="Self.T_detalle_factura" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="T_facturas">
+        <PropertyRef Name="numero_factura" />
+      </Principal>
+      <Dependent Role="T_detalle_factura">
+        <PropertyRef Name="factura_numero" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_T_detalle_factura_T_productos">
+    <End Role="T_productos" Type="Self.T_productos" Multiplicity="1" />
+    <End Role="T_detalle_factura" Type="Self.T_detalle_factura" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="T_productos">
+        <PropertyRef Name="codigo" />
+      </Principal>
+      <Dependent Role="T_detalle_factura">
+        <PropertyRef Name="producto_codigo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_T_facturas_T_productos">
+    <End Role="T_productos" Type="Self.T_productos" Multiplicity="1" />
+    <End Role="T_facturas" Type="Self.T_facturas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="T_productos">
+        <PropertyRef Name="codigo" />
+      </Principal>
+      <Dependent Role="T_facturas">
+        <PropertyRef Name="producto_codigo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_T_facturas_T_usuarios">
+    <End Role="T_usuarios" Type="Self.T_usuarios" Multiplicity="1" />
+    <End Role="T_facturas" Type="Self.T_facturas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="T_usuarios">
+        <PropertyRef Name="id_usuario" />
+      </Principal>
+      <Dependent Role="T_facturas">
+        <PropertyRef Name="usuario_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_T_productos_T_proveedores">
+    <End Role="T_proveedores" Type="Self.T_proveedores" Multiplicity="1" />
+    <End Role="T_productos" Type="Self.T_productos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="T_proveedores">
+        <PropertyRef Name="id_proveedor" />
+      </Principal>
+      <Dependent Role="T_productos">
+        <PropertyRef Name="proveedor_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="HeladeriaContext" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
+    <EntitySet Name="T_accesos" EntityType="Self.T_accesos" />
+    <EntitySet Name="T_anulaciones" EntityType="Self.T_anulaciones" />
+    <EntitySet Name="T_detalle_factura" EntityType="Self.T_detalle_factura" />
+    <EntitySet Name="T_facturas" EntityType="Self.T_facturas" />
+    <EntitySet Name="T_productos" EntityType="Self.T_productos" />
+    <EntitySet Name="T_proveedores" EntityType="Self.T_proveedores" />
+    <EntitySet Name="T_usuarios" EntityType="Self.T_usuarios" />
+    <AssociationSet Name="FK_T_accesos_T_usuarios" Association="Self.FK_T_accesos_T_usuarios">
+      <End Role="T_usuarios" EntitySet="T_usuarios" />
+      <End Role="T_accesos" EntitySet="T_accesos" />
+    </AssociationSet>
+    <AssociationSet Name="FK_T_anulaciones_T_facturas" Association="Self.FK_T_anulaciones_T_facturas">
+      <End Role="T_facturas" EntitySet="T_facturas" />
+      <End Role="T_anulaciones" EntitySet="T_anulaciones" />
+    </AssociationSet>
+    <AssociationSet Name="FK_T_anulaciones_T_usuarios" Association="Self.FK_T_anulaciones_T_usuarios">
+      <End Role="T_usuarios" EntitySet="T_usuarios" />
+      <End Role="T_anulaciones" EntitySet="T_anulaciones" />
+    </AssociationSet>
+    <AssociationSet Name="FK_T_detalle_factura_T_facturas" Association="Self.FK_T_detalle_factura_T_facturas">
+      <End Role="T_facturas" EntitySet="T_facturas" />
+      <End Role="T_detalle_factura" EntitySet="T_detalle_factura" />
+    </AssociationSet>
+    <AssociationSet Name="FK_T_detalle_factura_T_productos" Association="Self.FK_T_detalle_factura_T_productos">
+      <End Role="T_productos" EntitySet="T_productos" />
+      <End Role="T_detalle_factura" EntitySet="T_detalle_factura" />
+    </AssociationSet>
+    <AssociationSet Name="FK_T_facturas_T_productos" Association="Self.FK_T_facturas_T_productos">
+      <End Role="T_productos" EntitySet="T_productos" />
+      <End Role="T_facturas" EntitySet="T_facturas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_T_facturas_T_usuarios" Association="Self.FK_T_facturas_T_usuarios">
+      <End Role="T_usuarios" EntitySet="T_usuarios" />
+      <End Role="T_facturas" EntitySet="T_facturas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_T_productos_T_proveedores" Association="Self.FK_T_productos_T_proveedores">
+      <End Role="T_proveedores" EntitySet="T_proveedores" />
+      <End Role="T_productos" EntitySet="T_productos" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
