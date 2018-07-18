@@ -38,7 +38,6 @@
         <MappingFragment StoreEntitySet="T_detalle_factura">
           <ScalarProperty Name="id_detalle_factura" ColumnName="id_detalle_factura" />
           <ScalarProperty Name="factura_numero" ColumnName="factura_numero" />
-          <ScalarProperty Name="producto_codigo" ColumnName="producto_codigo" />
           <ScalarProperty Name="cantidad" ColumnName="cantidad" />
           <ScalarProperty Name="precio" ColumnName="precio" />
         </MappingFragment>
@@ -48,7 +47,6 @@
       <EntityTypeMapping TypeName="HeladeriaModel.T_facturas">
         <MappingFragment StoreEntitySet="T_facturas">
           <ScalarProperty Name="numero_factura" ColumnName="numero_factura" />
-          <ScalarProperty Name="nombre" ColumnName="nombre" />
           <ScalarProperty Name="total" ColumnName="total" />
           <ScalarProperty Name="descuento" ColumnName="descuento" />
           <ScalarProperty Name="fecha" ColumnName="fecha" />

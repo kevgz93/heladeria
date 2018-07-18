@@ -17,7 +17,6 @@ namespace BackEnd.Model
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public T_productos()
         {
-            this.T_detalle_factura = new HashSet<T_detalle_factura>();
             this.T_facturas = new HashSet<T_facturas>();
         }
     
@@ -32,8 +31,6 @@ namespace BackEnd.Model
         public string estado { get; set; }
         public int proveedor_id { get; set; }
     
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<T_detalle_factura> T_detalle_factura { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<T_facturas> T_facturas { get; set; }
         public virtual T_proveedores T_proveedores { get; set; }

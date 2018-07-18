@@ -22,7 +22,6 @@ namespace BackEnd.Model
         }
     
         public int numero_factura { get; set; }
-        public string nombre { get; set; }
         public double total { get; set; }
         public Nullable<double> descuento { get; set; }
         public System.DateTime fecha { get; set; }
