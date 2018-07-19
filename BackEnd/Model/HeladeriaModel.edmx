@@ -42,6 +42,7 @@
           <Property Name="factura_numero" Type="int" Nullable="false" />
           <Property Name="cantidad" Type="int" Nullable="false" />
           <Property Name="precio" Type="float" Nullable="false" />
+          <Property Name="producto_codigo" Type="int" Nullable="false" />
         </EntityType>
         <EntityType Name="T_facturas">
           <Key>
@@ -52,7 +53,6 @@
           <Property Name="descuento" Type="float" />
           <Property Name="fecha" Type="date" Nullable="false" />
           <Property Name="usuario_id" Type="int" Nullable="false" />
-          <Property Name="producto_codigo" Type="int" Nullable="false" />
           <Property Name="estado" Type="nchar" MaxLength="10" Nullable="false" />
         </EntityType>
         <EntityType Name="T_productos">
@@ -143,14 +143,14 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK_T_facturas_T_productos">
+        <Association Name="FK_T_detalle_factura_T_productos">
           <End Role="T_productos" Type="Self.T_productos" Multiplicity="1" />
-          <End Role="T_facturas" Type="Self.T_facturas" Multiplicity="*" />
+          <End Role="T_detalle_factura" Type="Self.T_detalle_factura" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="T_productos">
               <PropertyRef Name="codigo" />
             </Principal>
-            <Dependent Role="T_facturas">
+            <Dependent Role="T_detalle_factura">
               <PropertyRef Name="producto_codigo" />
             </Dependent>
           </ReferentialConstraint>
@@ -204,9 +204,9 @@
             <End Role="T_facturas" EntitySet="T_facturas" />
             <End Role="T_detalle_factura" EntitySet="T_detalle_factura" />
           </AssociationSet>
-          <AssociationSet Name="FK_T_facturas_T_productos" Association="Self.FK_T_facturas_T_productos">
+          <AssociationSet Name="FK_T_detalle_factura_T_productos" Association="Self.FK_T_detalle_factura_T_productos">
             <End Role="T_productos" EntitySet="T_productos" />
-            <End Role="T_facturas" EntitySet="T_facturas" />
+            <End Role="T_detalle_factura" EntitySet="T_detalle_factura" />
           </AssociationSet>
           <AssociationSet Name="FK_T_facturas_T_usuarios" Association="Self.FK_T_facturas_T_usuarios">
             <End Role="T_usuarios" EntitySet="T_usuarios" />
@@ -262,7 +262,9 @@
           <Property Name="factura_numero" Type="Int32" Nullable="false" />
           <Property Name="cantidad" Type="Int32" Nullable="false" />
           <Property Name="precio" Type="Double" Nullable="false" />
+          <Property Name="producto_codigo" Type="Int32" Nullable="false" />
           <NavigationProperty Name="T_facturas" Relationship="Self.FK_T_detalle_factura_T_facturas" FromRole="T_detalle_factura" ToRole="T_facturas" />
+          <NavigationProperty Name="T_productos" Relationship="Self.FK_T_detalle_factura_T_productos" FromRole="T_detalle_factura" ToRole="T_productos" />
         </EntityType>
         <EntityType Name="T_facturas">
           <Key>
@@ -273,11 +275,9 @@
           <Property Name="descuento" Type="Double" />
           <Property Name="fecha" Type="DateTime" Nullable="false" Precision="0" />
           <Property Name="usuario_id" Type="Int32" Nullable="false" />
-          <Property Name="producto_codigo" Type="Int32" Nullable="false" />
           <Property Name="estado" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
           <NavigationProperty Name="T_anulaciones" Relationship="Self.FK_T_anulaciones_T_facturas" FromRole="T_facturas" ToRole="T_anulaciones" />
           <NavigationProperty Name="T_detalle_factura" Relationship="Self.FK_T_detalle_factura_T_facturas" FromRole="T_facturas" ToRole="T_detalle_factura" />
-          <NavigationProperty Name="T_productos" Relationship="Self.FK_T_facturas_T_productos" FromRole="T_facturas" ToRole="T_productos" />
           <NavigationProperty Name="T_usuarios" Relationship="Self.FK_T_facturas_T_usuarios" FromRole="T_facturas" ToRole="T_usuarios" />
         </EntityType>
         <EntityType Name="T_productos">
@@ -294,7 +294,7 @@
           <Property Name="cantidad" Type="Int32" />
           <Property Name="estado" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="proveedor_id" Type="Int32" Nullable="false" />
-          <NavigationProperty Name="T_facturas" Relationship="Self.FK_T_facturas_T_productos" FromRole="T_productos" ToRole="T_facturas" />
+          <NavigationProperty Name="T_detalle_factura" Relationship="Self.FK_T_detalle_factura_T_productos" FromRole="T_productos" ToRole="T_detalle_factura" />
           <NavigationProperty Name="T_proveedores" Relationship="Self.FK_T_productos_T_proveedores" FromRole="T_productos" ToRole="T_proveedores" />
         </EntityType>
         <EntityType Name="T_proveedores">
@@ -374,14 +374,14 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK_T_facturas_T_productos">
+        <Association Name="FK_T_detalle_factura_T_productos">
           <End Role="T_productos" Type="Self.T_productos" Multiplicity="1" />
-          <End Role="T_facturas" Type="Self.T_facturas" Multiplicity="*" />
+          <End Role="T_detalle_factura" Type="Self.T_detalle_factura" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="T_productos">
               <PropertyRef Name="codigo" />
             </Principal>
-            <Dependent Role="T_facturas">
+            <Dependent Role="T_detalle_factura">
               <PropertyRef Name="producto_codigo" />
             </Dependent>
           </ReferentialConstraint>
@@ -435,9 +435,9 @@
             <End Role="T_facturas" EntitySet="T_facturas" />
             <End Role="T_detalle_factura" EntitySet="T_detalle_factura" />
           </AssociationSet>
-          <AssociationSet Name="FK_T_facturas_T_productos" Association="Self.FK_T_facturas_T_productos">
+          <AssociationSet Name="FK_T_detalle_factura_T_productos" Association="Self.FK_T_detalle_factura_T_productos">
             <End Role="T_productos" EntitySet="T_productos" />
-            <End Role="T_facturas" EntitySet="T_facturas" />
+            <End Role="T_detalle_factura" EntitySet="T_detalle_factura" />
           </AssociationSet>
           <AssociationSet Name="FK_T_facturas_T_usuarios" Association="Self.FK_T_facturas_T_usuarios">
             <End Role="T_usuarios" EntitySet="T_usuarios" />
@@ -493,6 +493,7 @@
                 <ScalarProperty Name="factura_numero" ColumnName="factura_numero" />
                 <ScalarProperty Name="cantidad" ColumnName="cantidad" />
                 <ScalarProperty Name="precio" ColumnName="precio" />
+                <ScalarProperty Name="producto_codigo" ColumnName="producto_codigo" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
@@ -504,7 +505,6 @@
                 <ScalarProperty Name="descuento" ColumnName="descuento" />
                 <ScalarProperty Name="fecha" ColumnName="fecha" />
                 <ScalarProperty Name="usuario_id" ColumnName="usuario_id" />
-                <ScalarProperty Name="producto_codigo" ColumnName="producto_codigo" />
                 <ScalarProperty Name="estado" ColumnName="estado" />
               </MappingFragment>
             </EntityTypeMapping>

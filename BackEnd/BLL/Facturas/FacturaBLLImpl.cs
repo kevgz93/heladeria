@@ -16,6 +16,44 @@ namespace BackEnd.BLL.Facturas
         private UnidadDeTrabajo<T_facturas> unidad;
         private HeladeriaContext context;
 
+        public List<T_facturas> buscarFacturasAnuladas()
+        {
+            try
+            {
+                List<T_facturas> resultado;
+                using (unidad = new UnidadDeTrabajo<T_facturas>(new HeladeriaContext()))
+                {
+                    Expression<Func<T_facturas, bool>> consulta = (d => d.estado == "Anulada");
+                    resultado = unidad.genericDAL.Find(consulta).ToList();
+                }
+                return resultado;
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
+        public List<T_facturas> buscarFacturasCorrectas()
+        {
+            try
+            {
+                List<T_facturas> resultado;
+                using (unidad = new UnidadDeTrabajo<T_facturas>(new HeladeriaContext()))
+                {
+                    Expression<Func<T_facturas, bool>> consulta = (d => d.estado == "Correcta");
+                    resultado = unidad.genericDAL.Find(consulta).ToList();
+                }
+                return resultado;
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
         public List<T_facturas> buscarPorFecha(DateTime fecha)
         {
             try

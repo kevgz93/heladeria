@@ -49,6 +49,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BLL\Facturas\Anulaciones\AnulacionBLLImpl.cs" />
+    <Compile Include="BLL\Facturas\Anulaciones\IAnulacionBLL.cs" />
     <Compile Include="BLL\Facturas\DetalleFacturaBLLImpl.cs" />
     <Compile Include="BLL\Facturas\FacturaBLLImpl.cs" />
     <Compile Include="BLL\Facturas\IDetalleFacturaBLL.cs" />

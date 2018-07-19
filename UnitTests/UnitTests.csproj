@@ -60,6 +60,7 @@
     <Compile Include="pruebasProveedor.cs" />
     <Compile Include="pruebasProducto.cs" />
     <Compile Include="pruebasFactura.cs" />
+    <Compile Include="pruebasAnulacion.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.Config" />

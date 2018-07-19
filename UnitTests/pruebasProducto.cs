@@ -17,13 +17,13 @@ namespace UnitTests
             IProductoBLL productoBLL = new ProductoBLLImpl();
             DateTime fecha = new DateTime(2018, 11, 24, 11, 19, 10, 560);
 
-            producto.nombre = "Nieve limon";
-            producto.categoria = "Nieves";
-            producto.cantidad = 2;
-            producto.descripcion = "Nieve de limon";
+            producto.nombre = "Paleta Fresa";
+            producto.categoria = "Paletas";
+            producto.cantidad = 5;
+            producto.descripcion = "Paleta de fresa";
             producto.fecha_ingreso = DateTime.Today;
             producto.fecha_vencimiento = fecha;
-            producto.precio = 3000;
+            producto.precio = 1000;
             producto.proveedor_id = 1;
             producto.estado = "Activo";
 

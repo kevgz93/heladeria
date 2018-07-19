@@ -13,5 +13,8 @@ namespace BackEnd.BLL.Facturas
 
         List<T_facturas> buscarPorFecha(DateTime fecha);
 
+        List<T_facturas> buscarFacturasAnuladas();
+        List<T_facturas> buscarFacturasCorrectas();
+
     }
 }

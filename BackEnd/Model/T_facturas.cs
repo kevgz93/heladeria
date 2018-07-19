@@ -26,14 +26,12 @@ namespace BackEnd.Model
         public Nullable<double> descuento { get; set; }
         public System.DateTime fecha { get; set; }
         public int usuario_id { get; set; }
-        public int producto_codigo { get; set; }
         public string estado { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<T_anulaciones> T_anulaciones { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<T_detalle_factura> T_detalle_factura { get; set; }
-        public virtual T_productos T_productos { get; set; }
         public virtual T_usuarios T_usuarios { get; set; }
     }
 }

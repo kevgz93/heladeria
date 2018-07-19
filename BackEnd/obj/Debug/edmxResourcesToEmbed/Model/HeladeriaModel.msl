@@ -40,6 +40,7 @@
           <ScalarProperty Name="factura_numero" ColumnName="factura_numero" />
           <ScalarProperty Name="cantidad" ColumnName="cantidad" />
           <ScalarProperty Name="precio" ColumnName="precio" />
+          <ScalarProperty Name="producto_codigo" ColumnName="producto_codigo" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -51,7 +52,6 @@
           <ScalarProperty Name="descuento" ColumnName="descuento" />
           <ScalarProperty Name="fecha" ColumnName="fecha" />
           <ScalarProperty Name="usuario_id" ColumnName="usuario_id" />
-          <ScalarProperty Name="producto_codigo" ColumnName="producto_codigo" />
           <ScalarProperty Name="estado" ColumnName="estado" />
         </MappingFragment>
       </EntityTypeMapping>

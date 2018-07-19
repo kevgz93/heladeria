@@ -18,7 +18,9 @@ namespace BackEnd.Model
         public int factura_numero { get; set; }
         public int cantidad { get; set; }
         public double precio { get; set; }
+        public int producto_codigo { get; set; }
     
         public virtual T_facturas T_facturas { get; set; }
+        public virtual T_productos T_productos { get; set; }
     }
 }
