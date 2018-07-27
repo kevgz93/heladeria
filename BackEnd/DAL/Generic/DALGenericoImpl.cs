@@ -52,7 +52,7 @@ namespace BackEnd.DAL.Generic
             {
                 return Context.Set<TEntity>().Where(predicate);
             }
-            catch (Exception)
+            catch (Exception e)
             {
 
                 return null;

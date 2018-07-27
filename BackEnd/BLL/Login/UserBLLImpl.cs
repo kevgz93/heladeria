@@ -74,7 +74,7 @@ namespace BackEnd.BLL
                 }
                 return resultado;
             }
-            catch (Exception)
+            catch (Exception e)
             {
 
                 throw;
