@@ -94,7 +94,6 @@ C:\Users\mark.mora\Documents\GitHub\heladeria\FrontEnd\bin\BackEnd.dll
 C:\Users\mark.mora\Documents\GitHub\heladeria\FrontEnd\bin\EntityFramework.dll
 C:\Users\mark.mora\Documents\GitHub\heladeria\FrontEnd\bin\BackEnd.pdb
 C:\Users\mark.mora\Documents\GitHub\heladeria\FrontEnd\bin\BackEnd.dll.config
-C:\Users\mark.mora\Documents\GitHub\heladeria\FrontEnd\bin\EntityFramework.xml
 C:\Users\soporte\Documents\ProyectoAndres\heladeria\FrontEnd\bin\ApplicationInsights.config
 C:\Users\soporte\Documents\ProyectoAndres\heladeria\FrontEnd\bin\FrontEnd.dll.config
 C:\Users\soporte\Documents\ProyectoAndres\heladeria\FrontEnd\bin\FrontEnd.dll
@@ -193,3 +192,4 @@ C:\Users\soporte\Documents\ProyectoAndres\heladeria\FrontEnd\obj\Debug\FrontEnd.
 C:\Users\soporte\Documents\ProyectoAndres\heladeria\FrontEnd\obj\Debug\FrontEnd.dll
 C:\Users\soporte\Documents\ProyectoAndres\heladeria\FrontEnd\obj\Debug\FrontEnd.pdb
 C:\Users\soporte\Documents\ProyectoAndres\heladeria\FrontEnd\bin\EntityFramework.SqlServer.dll
+C:\Users\mark.mora\Documents\GitHub\heladeria\FrontEnd\bin\EntityFramework.SqlServer.dll
