@@ -4,22 +4,23 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="221a9b7e7a2a48c78e3407e948041234" Name="Diagram1">
-        <EntityTypeShape EntityType="HeladeriaModel.sysdiagrams" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="HeladeriaModel.T_accesos" Width="1.5" PointX="3" PointY="2.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="HeladeriaModel.T_anulaciones" Width="1.5" PointX="5.25" PointY="6.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="HeladeriaModel.T_detalle_factura" Width="1.5" PointX="5.25" PointY="9.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="HeladeriaModel.T_facturas" Width="1.5" PointX="3" PointY="8.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="HeladeriaModel.T_productos" Width="1.5" PointX="3" PointY="12.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="HeladeriaModel.T_proveedores" Width="1.5" PointX="0.75" PointY="12.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="HeladeriaModel.T_usuarios" Width="1.5" PointX="0.75" PointY="3.875" IsExpanded="true" />
-        <AssociationConnector Association="HeladeriaModel.FK_T_accesos_T_usuarios" ManuallyRouted="false" />
+      <Diagram DiagramId="9e4f649adcf14c9e84fcc56bfdfdfa5e" Name="Diagram1">
+        <EntityTypeShape EntityType="HeladeriaModel.Role" Width="1.5" PointX="0.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="HeladeriaModel.T_anulaciones" Width="1.5" PointX="5.25" PointY="6" IsExpanded="true" />
+        <EntityTypeShape EntityType="HeladeriaModel.T_detalle_factura" Width="1.5" PointX="5.25" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="HeladeriaModel.T_facturas" Width="1.5" PointX="3" PointY="7.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="HeladeriaModel.T_personas" Width="1.5" PointX="0.75" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="HeladeriaModel.T_productos" Width="1.5" PointX="3" PointY="11.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="HeladeriaModel.T_proveedores" Width="1.5" PointX="0.75" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="HeladeriaModel.User" Width="1.5" PointX="3" PointY="3.625" IsExpanded="true" />
         <AssociationConnector Association="HeladeriaModel.FK_T_anulaciones_T_facturas" ManuallyRouted="false" />
         <AssociationConnector Association="HeladeriaModel.FK_T_anulaciones_T_usuarios" ManuallyRouted="false" />
         <AssociationConnector Association="HeladeriaModel.FK_T_detalle_factura_T_facturas" ManuallyRouted="false" />
         <AssociationConnector Association="HeladeriaModel.FK_T_detalle_factura_T_productos" ManuallyRouted="false" />
         <AssociationConnector Association="HeladeriaModel.FK_T_facturas_T_usuarios" ManuallyRouted="false" />
+        <AssociationConnector Association="HeladeriaModel.FK_Users_T_personas" ManuallyRouted="false" />
         <AssociationConnector Association="HeladeriaModel.FK_T_productos_T_proveedores" ManuallyRouted="false" />
+        <AssociationConnector Association="HeladeriaModel.UsersInRoles" ManuallyRouted="false" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

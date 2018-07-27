@@ -57,12 +57,14 @@
     <Compile Include="BLL\Facturas\IFacturaBLL.cs" />
     <Compile Include="BLL\Generic\BLLGenericoImpl.cs" />
     <Compile Include="BLL\Generic\IBLLGenerico.cs" />
+    <Compile Include="BLL\Login\IUserBLL.cs" />
+    <Compile Include="BLL\Login\UserBLLImpl.cs" />
     <Compile Include="BLL\Productos\IProductoBLL.cs" />
     <Compile Include="BLL\Productos\ProductoBLLImpl.cs" />
     <Compile Include="BLL\Proveedores\IProveedorBLL.cs" />
     <Compile Include="BLL\Proveedores\ProveedorBLLImpl.cs" />
-    <Compile Include="BLL\Usuarios\IUsuarioBLL.cs" />
-    <Compile Include="BLL\Usuarios\UsuarioBLLImpl.cs" />
+    <Compile Include="BLL\Personas\IPersonaBLL.cs" />
+    <Compile Include="BLL\Personas\PersonaBLLImpl.cs" />
     <Compile Include="DAL\Generic\DALGenericoImpl.cs" />
     <Compile Include="DAL\Generic\IDALGenerico.cs" />
     <Compile Include="DAL\Generic\UnidadDeTrabajo.cs" />
@@ -81,10 +83,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>HeladeriaModel.edmx</DependentUpon>
     </Compile>
-    <Compile Include="Model\sysdiagrams.cs">
-      <DependentUpon>HeladeriaModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Model\T_accesos.cs">
+    <Compile Include="Model\Role.cs">
       <DependentUpon>HeladeriaModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Model\T_anulaciones.cs">
@@ -96,13 +95,16 @@
     <Compile Include="Model\T_facturas.cs">
       <DependentUpon>HeladeriaModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="Model\T_personas.cs">
+      <DependentUpon>HeladeriaModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Model\T_productos.cs">
       <DependentUpon>HeladeriaModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Model\T_proveedores.cs">
       <DependentUpon>HeladeriaModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Model\T_usuarios.cs">
+    <Compile Include="Model\User.cs">
       <DependentUpon>HeladeriaModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -133,5 +135,6 @@
       <LastGenOutput>HeladeriaModel.cs</LastGenOutput>
     </Content>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -25,13 +25,13 @@ namespace BackEnd.Model
         public double total { get; set; }
         public Nullable<double> descuento { get; set; }
         public System.DateTime fecha { get; set; }
-        public int usuario_id { get; set; }
+        public int persona_id { get; set; }
         public string estado { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<T_anulaciones> T_anulaciones { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<T_detalle_factura> T_detalle_factura { get; set; }
-        public virtual T_usuarios T_usuarios { get; set; }
+        public virtual T_personas T_personas { get; set; }
     }
 }

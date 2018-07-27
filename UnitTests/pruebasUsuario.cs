@@ -1,6 +1,7 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using BackEnd.BLL.Usuarios;
+using BackEnd.BLL.Personas;
+using BackEnd.BLL;
 using BackEnd.Model;
 using System.Collections.Generic;
 
@@ -13,8 +14,8 @@ namespace UnitTests
         public void AgregarUsuario()
         {
 
-            T_usuarios usuario = new T_usuarios();
-            IUsuarioBLL usuarioBLL = new UsuarioBLLImpl();
+            T_personas usuario = new T_personas();
+            IPersonaBLL usuarioBLL = new PersonaBLLImpl();
 
 
             usuario.nombre = "Andres";
@@ -33,21 +34,23 @@ namespace UnitTests
         public void BuscarUsuarioPorNombre()
         {
 
-            List<T_usuarios> usuarios = new List<T_usuarios>();
-            IUsuarioBLL usuarioBLL = new UsuarioBLLImpl();
+            List<T_personas> usuarios = new List<T_personas>();
+            IPersonaBLL usuarioBLL = new PersonaBLLImpl();
 
-            usuarios = usuarioBLL.buscarPorNombre("Andres");
+            usuarios = usuarioBLL.buscarPorNombre("Mark");
         }
+
+     
 
         [TestMethod]
         public void EliminarUsuario()
         {
-            List<T_usuarios> usuarios = new List<T_usuarios>();
-            IUsuarioBLL usuarioBLL = new UsuarioBLLImpl();
+            List<T_personas> usuarios = new List<T_personas>();
+            IPersonaBLL usuarioBLL = new PersonaBLLImpl();
 
             usuarios = usuarioBLL.buscarPorNombre("Andres");
 
-            foreach (T_usuarios usuario in usuarios)
+            foreach (T_personas usuario in usuarios)
             {
                 if (usuario.apellido1 == "Zuñiga")
                 {
@@ -61,12 +64,12 @@ namespace UnitTests
         [TestMethod]
         public void ModificarUsuario()
         {
-            List<T_usuarios> usuarios = new List<T_usuarios>();
-            IUsuarioBLL usuarioBLL = new UsuarioBLLImpl();
+            List<T_personas> usuarios = new List<T_personas>();
+            IPersonaBLL usuarioBLL = new PersonaBLLImpl();
 
             usuarios = usuarioBLL.buscarPorNombre("Andres");
 
-            foreach (T_usuarios usuario in usuarios)
+            foreach (T_personas usuario in usuarios)
             {
                 if (usuario.apellido1 == "Zuñiga")
                 {

@@ -18,9 +18,9 @@ namespace BackEnd.Model
         public System.DateTime fecha { get; set; }
         public string comentario { get; set; }
         public int factura_numero { get; set; }
-        public int usuario_id { get; set; }
+        public int persona_id { get; set; }
     
         public virtual T_facturas T_facturas { get; set; }
-        public virtual T_usuarios T_usuarios { get; set; }
+        public virtual T_personas T_personas { get; set; }
     }
 }

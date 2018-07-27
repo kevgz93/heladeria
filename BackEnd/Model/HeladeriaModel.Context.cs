@@ -12,6 +12,8 @@ namespace BackEnd.Model
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
+    using System.Data.Entity.Core.Objects;
+    using System.Linq;
     
     public partial class HeladeriaContext : DbContext
     {
@@ -25,13 +27,44 @@ namespace BackEnd.Model
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
-        public virtual DbSet<T_accesos> T_accesos { get; set; }
+        public virtual DbSet<Role> Roles { get; set; }
         public virtual DbSet<T_anulaciones> T_anulaciones { get; set; }
         public virtual DbSet<T_detalle_factura> T_detalle_factura { get; set; }
         public virtual DbSet<T_facturas> T_facturas { get; set; }
+        public virtual DbSet<T_personas> T_personas { get; set; }
         public virtual DbSet<T_productos> T_productos { get; set; }
         public virtual DbSet<T_proveedores> T_proveedores { get; set; }
-        public virtual DbSet<T_usuarios> T_usuarios { get; set; }
+        public virtual DbSet<User> Users { get; set; }
+    
+        public virtual ObjectResult<string> sp_getRolesForUser(string userName)
+        {
+            var userNameParameter = userName != null ?
+                new ObjectParameter("userName", userName) :
+                new ObjectParameter("userName", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<string>("sp_getRolesForUser", userNameParameter);
+        }
+    
+        public virtual ObjectResult<string> sp_getUsuariosRole(string roleName)
+        {
+            var roleNameParameter = roleName != null ?
+                new ObjectParameter("roleName", roleName) :
+                new ObjectParameter("roleName", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<string>("sp_getUsuariosRole", roleNameParameter);
+        }
+    
+        public virtual int sp_isUserInRole(string userName, string roleName)
+        {
+            var userNameParameter = userName != null ?
+                new ObjectParameter("userName", userName) :
+                new ObjectParameter("userName", typeof(string));
+    
+            var roleNameParameter = roleName != null ?
+                new ObjectParameter("roleName", roleName) :
+                new ObjectParameter("roleName", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("sp_isUserInRole", userNameParameter, roleNameParameter);
+        }
     }
 }

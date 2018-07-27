@@ -10,3 +10,14 @@ C:\Users\soporte\Documents\ProyectoAndres\heladeria\BackEnd\obj\Debug\BackEnd.cs
 C:\Users\soporte\Documents\ProyectoAndres\heladeria\BackEnd\obj\Debug\BackEnd.csproj.CopyComplete
 C:\Users\soporte\Documents\ProyectoAndres\heladeria\BackEnd\obj\Debug\BackEnd.dll
 C:\Users\soporte\Documents\ProyectoAndres\heladeria\BackEnd\obj\Debug\BackEnd.pdb
+C:\Users\mark.mora\Documents\GitHub\heladeria\BackEnd\obj\Debug\BackEnd.csprojResolveAssemblyReference.cache
+C:\Users\mark.mora\Documents\GitHub\heladeria\BackEnd\obj\Debug\BackEnd.csproj.CoreCompileInputs.cache
+C:\Users\mark.mora\Documents\GitHub\heladeria\BackEnd\obj\Debug\BackEnd.dll
+C:\Users\mark.mora\Documents\GitHub\heladeria\BackEnd\obj\Debug\BackEnd.pdb
+C:\Users\mark.mora\Documents\GitHub\heladeria\BackEnd\bin\Debug\BackEnd.dll.config
+C:\Users\mark.mora\Documents\GitHub\heladeria\BackEnd\bin\Debug\BackEnd.dll
+C:\Users\mark.mora\Documents\GitHub\heladeria\BackEnd\bin\Debug\BackEnd.pdb
+C:\Users\mark.mora\Documents\GitHub\heladeria\BackEnd\bin\Debug\EntityFramework.dll
+C:\Users\mark.mora\Documents\GitHub\heladeria\BackEnd\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\mark.mora\Documents\GitHub\heladeria\BackEnd\bin\Debug\EntityFramework.xml
+C:\Users\mark.mora\Documents\GitHub\heladeria\BackEnd\bin\Debug\EntityFramework.SqlServer.xml

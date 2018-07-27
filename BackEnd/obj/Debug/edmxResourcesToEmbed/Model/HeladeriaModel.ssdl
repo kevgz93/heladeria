@@ -1,23 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Schema Namespace="HeladeriaModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
-  <EntityType Name="sysdiagrams">
+  <EntityType Name="Roles">
     <Key>
-      <PropertyRef Name="diagram_id" />
+      <PropertyRef Name="RoleId" />
     </Key>
-    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
-    <Property Name="principal_id" Type="int" Nullable="false" />
-    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="version" Type="int" />
-    <Property Name="definition" Type="varbinary(max)" />
-  </EntityType>
-  <EntityType Name="T_accesos">
-    <Key>
-      <PropertyRef Name="id_acceso" />
-    </Key>
-    <Property Name="id_acceso" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="login" Type="varchar" MaxLength="50" Nullable="false" />
-    <Property Name="password" Type="nvarchar" MaxLength="50" Nullable="false" />
-    <Property Name="usuario_id" Type="int" Nullable="false" />
+    <Property Name="RoleId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="RoleName" Type="nvarchar(max)" />
   </EntityType>
   <EntityType Name="T_anulaciones">
     <Key>
@@ -27,7 +15,7 @@
     <Property Name="fecha" Type="date" Nullable="false" />
     <Property Name="comentario" Type="varchar" MaxLength="60" Nullable="false" />
     <Property Name="factura_numero" Type="int" Nullable="false" />
-    <Property Name="usuario_id" Type="int" Nullable="false" />
+    <Property Name="persona_id" Type="int" Nullable="false" />
   </EntityType>
   <EntityType Name="T_detalle_factura">
     <Key>
@@ -47,8 +35,22 @@
     <Property Name="total" Type="float" Nullable="false" />
     <Property Name="descuento" Type="float" />
     <Property Name="fecha" Type="date" Nullable="false" />
-    <Property Name="usuario_id" Type="int" Nullable="false" />
+    <Property Name="persona_id" Type="int" Nullable="false" />
     <Property Name="estado" Type="nchar" MaxLength="10" Nullable="false" />
+  </EntityType>
+  <EntityType Name="T_personas">
+    <Key>
+      <PropertyRef Name="id_persona" />
+    </Key>
+    <Property Name="id_persona" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="cedula" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="nombre" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="apellido1" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="apellido2" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="telefono" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="correo" Type="varchar" MaxLength="35" Nullable="false" />
+    <Property Name="tipo" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="sexo" Type="varchar" MaxLength="10" Nullable="false" />
   </EntityType>
   <EntityType Name="T_productos">
     <Key>
@@ -76,29 +78,49 @@
     <Property Name="telefono" Type="varchar" MaxLength="15" Nullable="false" />
     <Property Name="correo" Type="varchar" MaxLength="35" Nullable="false" />
   </EntityType>
-  <EntityType Name="T_usuarios">
+  <EntityType Name="Users">
     <Key>
-      <PropertyRef Name="id_usuario" />
+      <PropertyRef Name="UserId" />
     </Key>
-    <Property Name="id_usuario" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="cedula" Type="varchar" MaxLength="20" Nullable="false" />
-    <Property Name="nombre" Type="varchar" MaxLength="20" Nullable="false" />
-    <Property Name="apellido1" Type="varchar" MaxLength="20" Nullable="false" />
-    <Property Name="apellido2" Type="varchar" MaxLength="20" Nullable="false" />
-    <Property Name="telefono" Type="varchar" MaxLength="15" Nullable="false" />
-    <Property Name="correo" Type="varchar" MaxLength="35" Nullable="false" />
-    <Property Name="tipo" Type="varchar" MaxLength="15" Nullable="false" />
-    <Property Name="sexo" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="UserId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserName" Type="nvarchar(max)" />
+    <Property Name="nombre" Type="nvarchar(max)" />
+    <Property Name="Password" Type="nvarchar" MaxLength="100" />
+    <Property Name="persona_id" Type="int" />
   </EntityType>
-  <Association Name="FK_T_accesos_T_usuarios">
-    <End Role="T_usuarios" Type="Self.T_usuarios" Multiplicity="1" />
-    <End Role="T_accesos" Type="Self.T_accesos" Multiplicity="*" />
+  <EntityType Name="UsersInRoles">
+    <Key>
+      <PropertyRef Name="User_UserId" />
+      <PropertyRef Name="Role_RoleId" />
+    </Key>
+    <Property Name="User_UserId" Type="int" Nullable="false" />
+    <Property Name="Role_RoleId" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_dbo_UserRoles_dbo_Roles_Role_RoleId">
+    <End Role="Roles" Type="Self.Roles" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="UsersInRoles" Type="Self.UsersInRoles" Multiplicity="*" />
     <ReferentialConstraint>
-      <Principal Role="T_usuarios">
-        <PropertyRef Name="id_usuario" />
+      <Principal Role="Roles">
+        <PropertyRef Name="RoleId" />
       </Principal>
-      <Dependent Role="T_accesos">
-        <PropertyRef Name="usuario_id" />
+      <Dependent Role="UsersInRoles">
+        <PropertyRef Name="Role_RoleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_UserRoles_dbo_Users_User_UserId">
+    <End Role="Users" Type="Self.Users" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="UsersInRoles" Type="Self.UsersInRoles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="UsersInRoles">
+        <PropertyRef Name="User_UserId" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -115,14 +137,14 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_T_anulaciones_T_usuarios">
-    <End Role="T_usuarios" Type="Self.T_usuarios" Multiplicity="1" />
+    <End Role="T_personas" Type="Self.T_personas" Multiplicity="1" />
     <End Role="T_anulaciones" Type="Self.T_anulaciones" Multiplicity="*" />
     <ReferentialConstraint>
-      <Principal Role="T_usuarios">
-        <PropertyRef Name="id_usuario" />
+      <Principal Role="T_personas">
+        <PropertyRef Name="id_persona" />
       </Principal>
       <Dependent Role="T_anulaciones">
-        <PropertyRef Name="usuario_id" />
+        <PropertyRef Name="persona_id" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -151,14 +173,14 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_T_facturas_T_usuarios">
-    <End Role="T_usuarios" Type="Self.T_usuarios" Multiplicity="1" />
+    <End Role="T_personas" Type="Self.T_personas" Multiplicity="1" />
     <End Role="T_facturas" Type="Self.T_facturas" Multiplicity="*" />
     <ReferentialConstraint>
-      <Principal Role="T_usuarios">
-        <PropertyRef Name="id_usuario" />
+      <Principal Role="T_personas">
+        <PropertyRef Name="id_persona" />
       </Principal>
       <Dependent Role="T_facturas">
-        <PropertyRef Name="usuario_id" />
+        <PropertyRef Name="persona_id" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -174,25 +196,52 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <Association Name="FK_Users_T_personas">
+    <End Role="T_personas" Type="Self.T_personas" Multiplicity="0..1" />
+    <End Role="Users" Type="Self.Users" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="T_personas">
+        <PropertyRef Name="id_persona" />
+      </Principal>
+      <Dependent Role="Users">
+        <PropertyRef Name="persona_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="sp_getRolesForUser" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="userName" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="sp_getUsuariosRole" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="roleName" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="sp_isUserInRole" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="userName" Type="varchar" Mode="In" />
+    <Parameter Name="roleName" Type="varchar" Mode="In" />
+  </Function>
   <EntityContainer Name="HeladeriaModelStoreContainer">
-    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
-    <EntitySet Name="T_accesos" EntityType="Self.T_accesos" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Roles" EntityType="Self.Roles" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="T_anulaciones" EntityType="Self.T_anulaciones" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="T_detalle_factura" EntityType="Self.T_detalle_factura" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="T_facturas" EntityType="Self.T_facturas" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_personas" EntityType="Self.T_personas" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="T_productos" EntityType="Self.T_productos" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="T_proveedores" EntityType="Self.T_proveedores" Schema="dbo" store:Type="Tables" />
-    <EntitySet Name="T_usuarios" EntityType="Self.T_usuarios" Schema="dbo" store:Type="Tables" />
-    <AssociationSet Name="FK_T_accesos_T_usuarios" Association="Self.FK_T_accesos_T_usuarios">
-      <End Role="T_usuarios" EntitySet="T_usuarios" />
-      <End Role="T_accesos" EntitySet="T_accesos" />
+    <EntitySet Name="Users" EntityType="Self.Users" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UsersInRoles" EntityType="Self.UsersInRoles" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_dbo_UserRoles_dbo_Roles_Role_RoleId" Association="Self.FK_dbo_UserRoles_dbo_Roles_Role_RoleId">
+      <End Role="Roles" EntitySet="Roles" />
+      <End Role="UsersInRoles" EntitySet="UsersInRoles" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_UserRoles_dbo_Users_User_UserId" Association="Self.FK_dbo_UserRoles_dbo_Users_User_UserId">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="UsersInRoles" EntitySet="UsersInRoles" />
     </AssociationSet>
     <AssociationSet Name="FK_T_anulaciones_T_facturas" Association="Self.FK_T_anulaciones_T_facturas">
       <End Role="T_facturas" EntitySet="T_facturas" />
       <End Role="T_anulaciones" EntitySet="T_anulaciones" />
     </AssociationSet>
     <AssociationSet Name="FK_T_anulaciones_T_usuarios" Association="Self.FK_T_anulaciones_T_usuarios">
-      <End Role="T_usuarios" EntitySet="T_usuarios" />
+      <End Role="T_personas" EntitySet="T_personas" />
       <End Role="T_anulaciones" EntitySet="T_anulaciones" />
     </AssociationSet>
     <AssociationSet Name="FK_T_detalle_factura_T_facturas" Association="Self.FK_T_detalle_factura_T_facturas">
@@ -204,12 +253,16 @@
       <End Role="T_detalle_factura" EntitySet="T_detalle_factura" />
     </AssociationSet>
     <AssociationSet Name="FK_T_facturas_T_usuarios" Association="Self.FK_T_facturas_T_usuarios">
-      <End Role="T_usuarios" EntitySet="T_usuarios" />
+      <End Role="T_personas" EntitySet="T_personas" />
       <End Role="T_facturas" EntitySet="T_facturas" />
     </AssociationSet>
     <AssociationSet Name="FK_T_productos_T_proveedores" Association="Self.FK_T_productos_T_proveedores">
       <End Role="T_proveedores" EntitySet="T_proveedores" />
       <End Role="T_productos" EntitySet="T_productos" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Users_T_personas" Association="Self.FK_Users_T_personas">
+      <End Role="T_personas" EntitySet="T_personas" />
+      <End Role="Users" EntitySet="Users" />
     </AssociationSet>
   </EntityContainer>
 </Schema>

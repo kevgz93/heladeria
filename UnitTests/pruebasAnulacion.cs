@@ -23,7 +23,7 @@ namespace UnitTests
             anulacion.fecha = DateTime.Today;
             anulacion.comentario = "Anulada porque si";
             anulacion.factura_numero = factura.numero_factura;
-            anulacion.usuario_id = 1;
+            anulacion.persona_id = 1;
 
             anulacionBLL.anularFacturaPorFactura(factura, anulacion);
         }

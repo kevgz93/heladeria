@@ -17,7 +17,7 @@ namespace UnitTests
             IDetalleFacturaBLL detallefacturaBLL = new DetalleFacturaBLLImpl();
 
             factura.fecha = DateTime.Today;
-            factura.usuario_id = 1;
+            factura.persona_id = 1;
             factura.total = 4000;
             factura.descuento = 0;
             factura.estado = "Correcta";
