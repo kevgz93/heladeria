@@ -21,3 +21,15 @@ C:\Users\mark.mora\Documents\GitHub\heladeria\BackEnd\bin\Debug\EntityFramework.
 C:\Users\mark.mora\Documents\GitHub\heladeria\BackEnd\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\mark.mora\Documents\GitHub\heladeria\BackEnd\bin\Debug\EntityFramework.xml
 C:\Users\mark.mora\Documents\GitHub\heladeria\BackEnd\bin\Debug\EntityFramework.SqlServer.xml
+E:\Progra5\heladeria\BackEnd\bin\Debug\BackEnd.dll.config
+E:\Progra5\heladeria\BackEnd\bin\Debug\BackEnd.dll
+E:\Progra5\heladeria\BackEnd\bin\Debug\BackEnd.pdb
+E:\Progra5\heladeria\BackEnd\bin\Debug\EntityFramework.dll
+E:\Progra5\heladeria\BackEnd\bin\Debug\EntityFramework.SqlServer.dll
+E:\Progra5\heladeria\BackEnd\bin\Debug\EntityFramework.xml
+E:\Progra5\heladeria\BackEnd\bin\Debug\EntityFramework.SqlServer.xml
+E:\Progra5\heladeria\BackEnd\obj\Debug\BackEnd.csprojAssemblyReference.cache
+E:\Progra5\heladeria\BackEnd\obj\Debug\BackEnd.csproj.CoreCompileInputs.cache
+E:\Progra5\heladeria\BackEnd\obj\Debug\BackEnd.csproj.CopyComplete
+E:\Progra5\heladeria\BackEnd\obj\Debug\BackEnd.dll
+E:\Progra5\heladeria\BackEnd\obj\Debug\BackEnd.pdb
