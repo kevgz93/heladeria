@@ -23,9 +23,20 @@
         .field-validation-error {
             color: red;
         }
+
+        #logo_wrapper img {
+            max-width: 100%;
+            height: auto;
+        }
+
     </style>
 </head>
-<center><img src="~/Imagenes/lenegre.jpg" width="1400" height="900" /></center>
+
+<div id="logo_wrapper">
+    <a href="http://example.com" target="_blank">
+        <center> <img src="~/Imagenes/lenegre.jpg" border="0" alt="logo" /></center>
+</a>
+</div>
 <body>
     <div id="login-div">
         @using (Html.BeginForm("Autherize", "Login", FormMethod.Post))

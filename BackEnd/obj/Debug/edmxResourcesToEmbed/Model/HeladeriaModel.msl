@@ -53,7 +53,6 @@
           <ScalarProperty Name="apellido2" ColumnName="apellido2" />
           <ScalarProperty Name="telefono" ColumnName="telefono" />
           <ScalarProperty Name="correo" ColumnName="correo" />
-          <ScalarProperty Name="tipo" ColumnName="tipo" />
           <ScalarProperty Name="sexo" ColumnName="sexo" />
         </MappingFragment>
       </EntityTypeMapping>

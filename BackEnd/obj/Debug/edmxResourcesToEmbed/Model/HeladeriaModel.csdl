@@ -57,7 +57,6 @@
     <Property Name="apellido2" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="telefono" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="correo" Type="String" MaxLength="35" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="tipo" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="sexo" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
     <NavigationProperty Name="T_anulaciones" Relationship="Self.FK_T_anulaciones_T_usuarios" FromRole="T_personas" ToRole="T_anulaciones" />
     <NavigationProperty Name="T_facturas" Relationship="Self.FK_T_facturas_T_usuarios" FromRole="T_personas" ToRole="T_facturas" />
