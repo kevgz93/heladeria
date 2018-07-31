@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="HeladeriaModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="HeladeriaModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="Roles">
           <Key>
             <PropertyRef Name="RoleId" />
@@ -54,7 +54,6 @@
           <Property Name="apellido2" Type="varchar" MaxLength="20" Nullable="false" />
           <Property Name="telefono" Type="varchar" MaxLength="15" Nullable="false" />
           <Property Name="correo" Type="varchar" MaxLength="35" Nullable="false" />
-          <Property Name="tipo" Type="varchar" MaxLength="15" Nullable="false" />
           <Property Name="sexo" Type="varchar" MaxLength="10" Nullable="false" />
         </EntityType>
         <EntityType Name="T_productos">
@@ -270,8 +269,7 @@
             <End Role="Users" EntitySet="Users" />
           </AssociationSet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="HeladeriaModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -508,10 +506,10 @@
             <End Role="Users" EntitySet="Users" />
           </AssociationSet>
           <FunctionImport Name="sp_getRolesForUser" ReturnType="Collection(String)">
-            <Parameter Name="userName" Mode="In" Type="String" />
+          <Parameter Name="userName" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="sp_getUsuariosRole" ReturnType="Collection(String)">
-            <Parameter Name="roleName" Mode="In" Type="String" />
+          <Parameter Name="roleName" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="sp_isUserInRole">
             <Parameter Name="userName" Mode="In" Type="String" />

@@ -49,7 +49,6 @@
     <Property Name="apellido2" Type="varchar" MaxLength="20" Nullable="false" />
     <Property Name="telefono" Type="varchar" MaxLength="15" Nullable="false" />
     <Property Name="correo" Type="varchar" MaxLength="35" Nullable="false" />
-    <Property Name="tipo" Type="varchar" MaxLength="15" Nullable="false" />
     <Property Name="sexo" Type="varchar" MaxLength="10" Nullable="false" />
   </EntityType>
   <EntityType Name="T_productos">
