@@ -1,0 +1,69 @@
+﻿@model IEnumerable<FrontEnd.Models.PersonaViewModel>
+
+@{
+    ViewBag.Title = "Personas";
+}
+
+<h2>Lista de personas del sistema</h2>
+
+<p>
+    @Html.ActionLink("Crear nuevo", "Agregar")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.cedula)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.nombre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.apellido1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.apellido2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.telefono)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.correo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.sexo)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.cedula)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.nombre)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.apellido1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.apellido2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.telefono)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.correo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.sexo)
+        </td>
+        <td>
+            @Html.ActionLink("Editar", "Editar", new { id=item.id_persona }) |
+            @Html.ActionLink("Detalles", "Detalles", new { id=item.id_persona }) |
+            @Html.ActionLink("Eliminar", "Eliminar", new { id=item.id_persona })
+        </td>
+    </tr>
+}
+
+</table>
