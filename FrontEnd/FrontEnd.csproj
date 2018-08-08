@@ -155,16 +155,20 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\CatalogoController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\CustomRoleProvider.cs" />
+    <Compile Include="Models\Mapeos.cs" />
+    <Compile Include="Models\ProductoViewModel.cs" />
     <Compile Include="Models\UserViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\4-col-portfolio.css" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -177,9 +181,18 @@
     <Content Include="Imagenes\heladeria1.jpg" />
     <Content Include="Imagenes\heladeria2.jpg" />
     <Content Include="Imagenes\heladeria3.jpg" />
-    <Content Include="Imagenes\heladeria4.jpg" />
+    <Content Include="Imagenes\heladeria6.jpg" />
     <Content Include="Imagenes\heladeria5.jpg" />
     <Content Include="Imagenes\lenegre.jpg" />
+    <Content Include="Imagenes\Producto1.jpg" />
+    <Content Include="Imagenes\Producto2.jpg" />
+    <Content Include="Imagenes\Producto3.jpg" />
+    <Content Include="Imagenes\Producto4.jpg" />
+    <Content Include="Imagenes\Producto5.jpg" />
+    <Content Include="Imagenes\Producto6.jpg" />
+    <Content Include="Imagenes\Producto7.jpg" />
+    <Content Include="Imagenes\Producto8.jpg" />
+    <Content Include="Imagenes\Producto9.jpg" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -212,6 +225,7 @@
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Login\Index.cshtml" />
+    <Content Include="Views\Catalogo\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

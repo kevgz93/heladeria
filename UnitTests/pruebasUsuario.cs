@@ -25,7 +25,6 @@ namespace UnitTests
             usuario.telefono = "85484223";
             usuario.correo = "andrezu1998@hotmail.es";
             usuario.sexo = "M";
-            usuario.tipo = "admin";
 
             usuarioBLL.Add(usuario);
         }

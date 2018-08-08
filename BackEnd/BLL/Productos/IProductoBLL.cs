@@ -12,6 +12,7 @@ namespace BackEnd.BLL.Productos
     {
 
         List<T_productos> buscarPorNombre(string nombre);
+        List<T_productos> buscarPorCategoria(string nombreCat);
 
     }
 }

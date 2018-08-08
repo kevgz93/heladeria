@@ -16,6 +16,25 @@ namespace BackEnd.BLL.Productos
         private UnidadDeTrabajo<T_productos> unidad;
         private HeladeriaContext context;
 
+        public List<T_productos> buscarPorCategoria(string nombreCat)
+        {
+            try
+            {
+                List<T_productos> resultado;
+                using (unidad = new UnidadDeTrabajo<T_productos>(new HeladeriaContext()))
+                {
+                    Expression<Func<T_productos, bool>> consulta = (d => d.categoria == nombreCat);
+                    resultado = unidad.genericDAL.Find(consulta).ToList();
+                }
+                return resultado;
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
         public List<T_productos> buscarPorNombre(string nombre)
         {
             try
