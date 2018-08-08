@@ -47,11 +47,11 @@ namespace UnitTests
             List<T_personas> usuarios = new List<T_personas>();
             IPersonaBLL usuarioBLL = new PersonaBLLImpl();
 
-            usuarios = usuarioBLL.buscarPorNombre("Andres");
+            usuarios = usuarioBLL.buscarPorNombre("11");
 
             foreach (T_personas usuario in usuarios)
             {
-                if (usuario.apellido1 == "Zuñiga")
+                if (usuario.apellido1 == "11")
                 {
                     usuarioBLL.Remove(usuario);
                 }

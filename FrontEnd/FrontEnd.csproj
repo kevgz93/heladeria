@@ -158,12 +158,17 @@
     <Compile Include="Controllers\CatalogoController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
+    <Compile Include="Controllers\PersonaController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\CustomRoleProvider.cs" />
+<<<<<<< HEAD
     <Compile Include="Models\Mapeos.cs" />
     <Compile Include="Models\ProductoViewModel.cs" />
+=======
+    <Compile Include="Models\PersonaViewModel.cs" />
+>>>>>>> 68affd153fcbc191443a1a07d9c394c48206e9f5
     <Compile Include="Models\UserViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -225,7 +230,15 @@
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Login\Index.cshtml" />
+<<<<<<< HEAD
     <Content Include="Views\Catalogo\Index.cshtml" />
+=======
+    <Content Include="Views\Persona\Index.cshtml" />
+    <Content Include="Views\Persona\Agregar.cshtml" />
+    <Content Include="Views\Persona\Editar.cshtml" />
+    <Content Include="Views\Persona\Detalles.cshtml" />
+    <Content Include="Views\Persona\Eliminar.cshtml" />
+>>>>>>> 68affd153fcbc191443a1a07d9c394c48206e9f5
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
