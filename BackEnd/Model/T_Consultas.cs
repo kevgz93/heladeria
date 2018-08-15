@@ -12,15 +12,12 @@ namespace BackEnd.Model
     using System;
     using System.Collections.Generic;
     
-    public partial class T_detalle_factura
+    public partial class T_Consultas
     {
-        public int id_detalle_factura { get; set; }
-        public int factura_numero { get; set; }
-        public int cantidad { get; set; }
-        public double precio { get; set; }
-        public int producto_codigo { get; set; }
-    
-        public virtual T_facturas T_facturas { get; set; }
-        public virtual T_productos T_productos { get; set; }
+        public int idConsulta { get; set; }
+        public string consulta { get; set; }
+        public string nombre { get; set; }
+        public string email { get; set; }
+        public string telefono { get; set; }
     }
 }

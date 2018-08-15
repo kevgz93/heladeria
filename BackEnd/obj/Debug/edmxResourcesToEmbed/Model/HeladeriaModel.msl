@@ -107,5 +107,16 @@
     <FunctionImportMapping FunctionImportName="sp_getRolesForUser" FunctionName="HeladeriaModel.Store.sp_getRolesForUser" />
     <FunctionImportMapping FunctionImportName="sp_getUsuariosRole" FunctionName="HeladeriaModel.Store.sp_getUsuariosRole" />
     <FunctionImportMapping FunctionImportName="sp_isUserInRole" FunctionName="HeladeriaModel.Store.sp_isUserInRole" />
+    <EntitySetMapping Name="T_Consultas">
+      <EntityTypeMapping TypeName="HeladeriaModel.T_Consultas">
+        <MappingFragment StoreEntitySet="T_Consultas">
+          <ScalarProperty Name="telefono" ColumnName="telefono" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="consulta" ColumnName="consulta" />
+          <ScalarProperty Name="idConsulta" ColumnName="idConsulta" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
   </EntityContainerMapping>
 </Mapping>

@@ -21,6 +21,7 @@
         <AssociationConnector Association="HeladeriaModel.FK_Users_T_personas" ManuallyRouted="false" />
         <AssociationConnector Association="HeladeriaModel.FK_T_productos_T_proveedores" ManuallyRouted="false" />
         <AssociationConnector Association="HeladeriaModel.UsersInRoles" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="HeladeriaModel.T_Consultas" Width="1.5" PointX="3.375" PointY="0.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

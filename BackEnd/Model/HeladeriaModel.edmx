@@ -22,6 +22,16 @@
           <Property Name="factura_numero" Type="int" Nullable="false" />
           <Property Name="persona_id" Type="int" Nullable="false" />
         </EntityType>
+        <EntityType Name="T_Consultas">
+          <Key>
+            <PropertyRef Name="idConsulta" />
+          </Key>
+          <Property Name="idConsulta" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="consulta" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="nombre" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="email" Type="nvarchar" MaxLength="30" Nullable="false" />
+          <Property Name="telefono" Type="nvarchar" MaxLength="20" />
+        </EntityType>
         <EntityType Name="T_detalle_factura">
           <Key>
             <PropertyRef Name="id_detalle_factura" />
@@ -225,6 +235,7 @@
         <EntityContainer Name="HeladeriaModelStoreContainer">
           <EntitySet Name="Roles" EntityType="Self.Roles" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="T_anulaciones" EntityType="Self.T_anulaciones" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="T_Consultas" EntityType="Self.T_Consultas" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="T_detalle_factura" EntityType="Self.T_detalle_factura" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="T_facturas" EntityType="Self.T_facturas" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="T_personas" EntityType="Self.T_personas" Schema="dbo" store:Type="Tables" />
@@ -515,7 +526,18 @@
             <Parameter Name="userName" Mode="In" Type="String" />
             <Parameter Name="roleName" Mode="In" Type="String" />
           </FunctionImport>
+          <EntitySet Name="T_Consultas" EntityType="HeladeriaModel.T_Consultas" />
         </EntityContainer>
+        <EntityType Name="T_Consultas">
+          <Key>
+            <PropertyRef Name="idConsulta" />
+          </Key>
+          <Property Name="idConsulta" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="consulta" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="nombre" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="email" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="telefono" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+        </EntityType>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -628,6 +650,17 @@
           <FunctionImportMapping FunctionImportName="sp_getRolesForUser" FunctionName="HeladeriaModel.Store.sp_getRolesForUser" />
           <FunctionImportMapping FunctionImportName="sp_getUsuariosRole" FunctionName="HeladeriaModel.Store.sp_getUsuariosRole" />
           <FunctionImportMapping FunctionImportName="sp_isUserInRole" FunctionName="HeladeriaModel.Store.sp_isUserInRole" />
+          <EntitySetMapping Name="T_Consultas">
+            <EntityTypeMapping TypeName="HeladeriaModel.T_Consultas">
+              <MappingFragment StoreEntitySet="T_Consultas">
+                <ScalarProperty Name="telefono" ColumnName="telefono" />
+                <ScalarProperty Name="email" ColumnName="email" />
+                <ScalarProperty Name="nombre" ColumnName="nombre" />
+                <ScalarProperty Name="consulta" ColumnName="consulta" />
+                <ScalarProperty Name="idConsulta" ColumnName="idConsulta" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
         </EntityContainerMapping>
       </Mapping>
     </edmx:Mappings>

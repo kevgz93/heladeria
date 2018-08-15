@@ -242,5 +242,16 @@
       <Parameter Name="userName" Mode="In" Type="String" />
       <Parameter Name="roleName" Mode="In" Type="String" />
     </FunctionImport>
+    <EntitySet Name="T_Consultas" EntityType="HeladeriaModel.T_Consultas" />
   </EntityContainer>
+  <EntityType Name="T_Consultas">
+    <Key>
+      <PropertyRef Name="idConsulta" />
+    </Key>
+    <Property Name="idConsulta" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="consulta" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="nombre" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="email" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="telefono" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+  </EntityType>
 </Schema>

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 using BackEnd.Model;
@@ -8,7 +9,7 @@ namespace FrontEnd.Models
 {
     public class ProductoViewModel
     {
-
+        [Key]
         public int codigo { get; set; }
         public string categoria { get; set; }
         public string nombre { get; set; }
