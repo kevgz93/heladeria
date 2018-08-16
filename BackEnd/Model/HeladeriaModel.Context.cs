@@ -35,6 +35,7 @@ namespace BackEnd.Model
         public virtual DbSet<T_productos> T_productos { get; set; }
         public virtual DbSet<T_proveedores> T_proveedores { get; set; }
         public virtual DbSet<User> Users { get; set; }
+        public virtual DbSet<T_Consultas> T_Consultas { get; set; }
     
         public virtual ObjectResult<string> sp_getRolesForUser(string userName)
         {

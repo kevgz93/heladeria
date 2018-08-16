@@ -1,0 +1,71 @@
+﻿@model FrontEnd.Models.ProductoViewModel
+
+@{
+    ViewBag.Title = "Detalles";
+}
+
+<h2>Detalles</h2>
+
+<div>
+    <h4>ProductoViewModel</h4>
+    <hr />
+    <div class="col-sm-6">
+        <img width="200px" src="@Url.Content("~/Imagenes/producto" + @Html.ValueFor(model => model.codigo) +".jpg")" />
+    </div>
+    <div class="col-sm-6">
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.categoria)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.categoria)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.nombre)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.nombre)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.descripcion)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.descripcion)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.precio)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.precio)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.cantidad)
+            </dt>
+
+            <dd>
+                @{
+                    if (Model.cantidad > 0)
+                    {
+                        @Html.DisplayText("Producto disponible")
+                    }
+                    else
+                    {
+                        @Html.DisplayText("Producto fuera de stock")
+                    }
+                }
+            </dd>
+        </dl>
+    </div>
+</div>
+<p>
+    @Html.ActionLink("Agregar al carrito", "Carrito", new { Model }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -17,6 +17,16 @@
     <Property Name="factura_numero" Type="int" Nullable="false" />
     <Property Name="persona_id" Type="int" Nullable="false" />
   </EntityType>
+  <EntityType Name="T_Consultas">
+    <Key>
+      <PropertyRef Name="idConsulta" />
+    </Key>
+    <Property Name="idConsulta" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="consulta" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="nombre" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="email" Type="nvarchar" MaxLength="30" Nullable="false" />
+    <Property Name="telefono" Type="nvarchar" MaxLength="20" />
+  </EntityType>
   <EntityType Name="T_detalle_factura">
     <Key>
       <PropertyRef Name="id_detalle_factura" />
@@ -229,6 +239,7 @@
   <EntityContainer Name="HeladeriaModelStoreContainer">
     <EntitySet Name="Roles" EntityType="Self.Roles" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="T_anulaciones" EntityType="Self.T_anulaciones" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_Consultas" EntityType="Self.T_Consultas" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="T_detalle_factura" EntityType="Self.T_detalle_factura" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="T_facturas" EntityType="Self.T_facturas" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="T_personas" EntityType="Self.T_personas" Schema="dbo" store:Type="Tables" />

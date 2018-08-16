@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 ﻿// T4 code generation is enabled for model 'C:\Users\Administrator\Desktop\heladeria\BackEnd\Model\HeladeriaModel.edmx'. 
+=======
+﻿// T4 code generation is enabled for model 'E:\Progra5\heladeria\BackEnd\Model\HeladeriaModel.edmx'. 
+>>>>>>> 56c7618cb7512d1353322b9f044adc6ee39e49fa
 // To enable legacy code generation, change the value of the 'Code Generation Strategy' designer
 // property to 'Legacy ObjectContext'. This property is available in the Properties Window when the model
 // is open in the designer.

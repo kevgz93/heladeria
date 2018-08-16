@@ -31,5 +31,14 @@ namespace FrontEnd.Controllers
 
             return View(listaProductos);
         }
+
+        public ActionResult Detalles(int id)
+        {
+            T_productos producto = new T_productos();
+            producto = productoBLL.Get(id);
+
+
+            return View(mapeo.mapearPaPVM(producto));
+        }
     }
 }
