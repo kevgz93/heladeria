@@ -78,8 +78,8 @@ C:\Users\Administrator\Desktop\heladeria\UnitTests\bin\Debug\BackEnd.pdb
 C:\Users\Administrator\Desktop\heladeria\UnitTests\bin\Debug\BackEnd.dll.config
 C:\Users\Administrator\Desktop\heladeria\UnitTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
 C:\Users\Administrator\Desktop\heladeria\UnitTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\Administrator\Desktop\heladeria\UnitTests\obj\Debug\UnitTests.dll
+C:\Users\Administrator\Desktop\heladeria\UnitTests\obj\Debug\UnitTests.pdb
 C:\Users\Administrator\Desktop\heladeria\UnitTests\obj\Debug\UnitTests.csprojAssemblyReference.cache
 C:\Users\Administrator\Desktop\heladeria\UnitTests\obj\Debug\UnitTests.csproj.CoreCompileInputs.cache
 C:\Users\Administrator\Desktop\heladeria\UnitTests\obj\Debug\UnitTests.csproj.CopyComplete
-C:\Users\Administrator\Desktop\heladeria\UnitTests\obj\Debug\UnitTests.dll
-C:\Users\Administrator\Desktop\heladeria\UnitTests\obj\Debug\UnitTests.pdb
