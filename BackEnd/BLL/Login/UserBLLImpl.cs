@@ -40,7 +40,7 @@ namespace BackEnd.BLL
 
         public List<User> getAll()
         {
-            return this.getAll();
+            return this.GetAll();
         }
 
         public User getUser(string userName)
@@ -107,14 +107,27 @@ namespace BackEnd.BLL
             return result;
         }
 
+        public bool insertar(string roleName, string login)
+        {
+            throw new NotImplementedException();
+        }
+
         public bool insertar(int idRole, string login)
         {
             throw new NotImplementedException();
         }
 
-        public bool insertar(string roleName, string login)
+        public bool insertar(User user)
         {
-            throw new NotImplementedException();
+            string result;
+            UserBLLImpl UserBLLImpl = new UserBLLImpl();
+            result = UserBLLImpl.Add(user);
+            if (result == "Exito")
+            {
+                return true;
+            }
+
+            return false;
         }
 
         public bool isUserInRole(string userName, string roleName)

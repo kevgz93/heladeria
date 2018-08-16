@@ -61,6 +61,7 @@
     <NavigationProperty Name="T_anulaciones" Relationship="Self.FK_T_anulaciones_T_usuarios" FromRole="T_personas" ToRole="T_anulaciones" />
     <NavigationProperty Name="T_facturas" Relationship="Self.FK_T_facturas_T_usuarios" FromRole="T_personas" ToRole="T_facturas" />
     <NavigationProperty Name="Users" Relationship="Self.FK_Users_T_personas" FromRole="T_personas" ToRole="Users" />
+    <Property Name="tipo" Type="String" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
   </EntityType>
   <EntityType Name="T_productos">
     <Key>
@@ -241,6 +242,14 @@
     <FunctionImport Name="sp_isUserInRole">
       <Parameter Name="userName" Mode="In" Type="String" />
       <Parameter Name="roleName" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_AddUsersInRoles">
+      <Parameter Name="roleId" Mode="In" Type="Int32" />
+      <Parameter Name="userId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_updateRoleByUser">
+      <Parameter Name="userId" Mode="In" Type="Int32" />
+      <Parameter Name="roleID" Mode="In" Type="Int32" />
     </FunctionImport>
   </EntityContainer>
 </Schema>

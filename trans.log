@@ -1,0 +1,566 @@
+[2018-08-01 15:44:37.593 Thread-14 FINE]
+------------------------- Runtime Information -------------------------------
+SCA Runtime Properties
+WinForms.CollectionMutationMonitor.Label=WinFormsDataSource
+com.fortify.sca.AddImpliedMethods=true
+com.fortify.sca.AntCompilerClass=com.fortify.dev.ant.SCACompiler
+com.fortify.sca.AspnetTranslator=C:\Program Files\Fortify\Fortify_SCA_and_Apps_18.10\Core/private-bin/sca/aspcodegen.exe
+com.fortify.sca.BuildID=test_bryant2
+com.fortify.sca.BundleControlflowIssues=true
+com.fortify.sca.BytecodePreview=true
+com.fortify.sca.CollectPerformanceData=true
+com.fortify.sca.CustomRulesDir=C:\Program Files\Fortify\Fortify_SCA_and_Apps_18.10\Core\config\customrules
+com.fortify.sca.DaemonCompilers=com.fortify.sca.util.compilers.GppCompiler,com.fortify.sca.util.compilers.GccCompiler,com.fortify.sca.util.compilers.AppleGppCompiler,com.fortify.sca.util.compilers.AppleGccCompiler,com.fortify.sca.util.compilers.MicrosoftCompiler,com.fortify.sca.util.compilers.MicrosoftLinker,com.fortify.sca.util.compilers.LdCompiler,com.fortify.sca.util.compilers.ArUtil,com.fortify.sca.util.compilers.SunCCompiler,com.fortify.sca.util.compilers.SunCppCompiler,com.fortify.sca.util.compilers.IntelCompiler,com.fortify.sca.util.compilers.ExternalCppAdapter,com.fortify.sca.util.compilers.ClangCompiler
+com.fortify.sca.DeadCodeFilter=true
+com.fortify.sca.DeadCodeIgnoreTrivialPredicates=true
+com.fortify.sca.Debug=
+com.fortify.sca.DefaultAnalyzers=semantic:dataflow:controlflow:nullptr:configuration:content:structural:buffer
+com.fortify.sca.DefaultFileTypes=java,rb,jsp,jspx,tag,tagx,tld,sql,cfm,php,phtml,ctp,pks,pkh,pkb,xml,config,Config,settings,properties,dll,exe,winmd,cs,vb,asax,ascx,ashx,asmx,aspx,master,Master,xaml,baml,cshtml,vbhtml,inc,asp,vbscript,js,ini,bas,cls,vbs,frm,ctl,html,htm,xsd,wsdd,xmi,py,cfml,cfc,abap,xhtml,cpx,xcfg,jsff,as,mxml,cbl,cscfg,csdef,wadcfg,wadcfgx,appxmanifest,wsdl,plist,bsp,ABAP,BSP,swift,page,trigger,scala
+com.fortify.sca.DefaultJarsDirs=default_jars
+com.fortify.sca.DefaultRulesDir=C:\Program Files\Fortify\Fortify_SCA_and_Apps_18.10\Core\config\rules
+com.fortify.sca.DisableDeadCodeElimination=false
+com.fortify.sca.DisableFunctionPointers=false
+com.fortify.sca.DisableGlobals=false
+com.fortify.sca.DisableInferredConstants=false
+com.fortify.sca.DotnetDecompiler=C:\Program Files\Fortify\Fortify_SCA_and_Apps_18.10\Core/private-bin/sca/dotnet-decompiler.exe
+com.fortify.sca.DotnetTranslator=C:\Program Files\Fortify\Fortify_SCA_and_Apps_18.10\Core/private-bin/sca/dotnet-translator.exe
+com.fortify.sca.DotnetVersion=4.5
+com.fortify.sca.EnableInterproceduralConstantResolution=true
+com.fortify.sca.EnableNestedWrappers=true
+com.fortify.sca.EnableStructuralMatchCache=true
+com.fortify.sca.EnableWrapperDetection=true
+com.fortify.sca.FVDLDisableDescriptions=false
+com.fortify.sca.FVDLDisableProgramData=false
+com.fortify.sca.FVDLDisableSnippets=false
+com.fortify.sca.FVDLStylesheet=C:\Program Files\Fortify\Fortify_SCA_and_Apps_18.10\Core/resources/sca/fvdl2html.xsl
+com.fortify.sca.IndirectCallGraphBuilders=WinFormsAdHocFunctionBuilder,VirtualCGBuilder,J2EEIndirectCGBuilder,JNICGBuilder,StoredProcedureResolver,JavaWSCGBuilder,StrutsCGBuilder,DotNetWSCGBuilder,SqlServerSPResolver,ASPCGBuilder,ScriptedCGBuilder,NewJspCustomTagCGBuilder,DotNetCABCGBuilder,StateInjectionCGBuilder,SqlServerSPResolver2,PHPLambdaResolver,JavaWebCGBuilder
+com.fortify.sca.JavaSourcepathSearch=true
+com.fortify.sca.JdkVersion=1.8
+com.fortify.sca.LogFile=trans.log
+com.fortify.sca.LowSeverityCutoff=1.0
+com.fortify.sca.MultithreadedAnalysis=true
+com.fortify.sca.NoNestedOutTagOutput=org.apache.taglibs.standard.tag.rt.core.RemoveTag,org.apache.taglibs.standard.tag.rt.core.SetTag
+com.fortify.sca.OldVbNetExcludeFileTypes=vb,asax,ascx,ashx,asmx,aspx,xaml,cshtml,vbhtml
+com.fortify.sca.Phase0HigherOrder.Languages=python,ruby,swift
+com.fortify.sca.Phase0HigherOrder.Level=1
+com.fortify.sca.PrintPerformanceDataAfterScan=false
+com.fortify.sca.ProjectRoot=C:\Users\Administrator\AppData\Local/Fortify
+com.fortify.sca.RequireMapKeys=classrule
+com.fortify.sca.SolverTimeout=15
+com.fortify.sca.SqlLanguage=TSQL
+com.fortify.sca.SuppressLowSeverity=true
+com.fortify.sca.ThreadCount.NameTableLoading=1
+com.fortify.sca.TypeInferenceFunctionTimeout=60
+com.fortify.sca.TypeInferenceLanguages=javascript,python,ruby
+com.fortify.sca.TypeInferencePhase0Timeout=300
+com.fortify.sca.UnicodeInputFile=true
+com.fortify.sca.UniversalBlacklist=.*yyparse.*
+com.fortify.sca.WebSiteProject=
+com.fortify.sca.alias.mode.csharp=fs
+com.fortify.sca.alias.mode.javascript=fi
+com.fortify.sca.alias.mode.swift=fi
+com.fortify.sca.alias.mode.vb=fs
+com.fortify.sca.analyzer.controlflow.EnableLivenessOptimization=false
+com.fortify.sca.analyzer.controlflow.EnableMachineFiltering=false
+com.fortify.sca.analyzer.controlflow.EnableRefRuleOptimization=false
+com.fortify.sca.analyzer.controlflow.EnableTimeOut=true
+com.fortify.sca.compilers.ant=com.fortify.sca.util.compilers.AntAdapter
+com.fortify.sca.compilers.ar=com.fortify.sca.util.compilers.ArUtil
+com.fortify.sca.compilers.armcc=com.fortify.sca.util.compilers.ArmCcCompiler
+com.fortify.sca.compilers.armcpp=com.fortify.sca.util.compilers.ArmCppCompiler
+com.fortify.sca.compilers.c++=com.fortify.sca.util.compilers.GppCompiler
+com.fortify.sca.compilers.c89=com.fortify.sca.util.compilers.C89Compiler
+com.fortify.sca.compilers.cc=com.fortify.sca.util.compilers.GccCompiler
+com.fortify.sca.compilers.cl=com.fortify.sca.util.compilers.MicrosoftCompiler
+com.fortify.sca.compilers.clearmake=com.fortify.sca.util.compilers.TouchlessCompiler
+com.fortify.sca.compilers.devenv=com.fortify.sca.util.compilers.DevenvNetAdapter
+com.fortify.sca.compilers.fortify=com.fortify.sca.util.compilers.FortifyCompiler
+com.fortify.sca.compilers.g++=com.fortify.sca.util.compilers.GppCompiler
+com.fortify.sca.compilers.g++-*=com.fortify.sca.util.compilers.GppCompiler
+com.fortify.sca.compilers.g++2*=com.fortify.sca.util.compilers.GppCompiler
+com.fortify.sca.compilers.g++3*=com.fortify.sca.util.compilers.GppCompiler
+com.fortify.sca.compilers.g++4*=com.fortify.sca.util.compilers.GppCompiler
+com.fortify.sca.compilers.gcc=com.fortify.sca.util.compilers.GccCompiler
+com.fortify.sca.compilers.gcc-*=com.fortify.sca.util.compilers.GccCompiler
+com.fortify.sca.compilers.gcc2*=com.fortify.sca.util.compilers.GccCompiler
+com.fortify.sca.compilers.gcc3*=com.fortify.sca.util.compilers.GccCompiler
+com.fortify.sca.compilers.gcc4*=com.fortify.sca.util.compilers.GccCompiler
+com.fortify.sca.compilers.gmake=com.fortify.sca.util.compilers.TouchlessCompiler
+com.fortify.sca.compilers.gradle=com.fortify.sca.util.compilers.GradleAdapter
+com.fortify.sca.compilers.gradlew=com.fortify.sca.util.compilers.GradleAdapter
+com.fortify.sca.compilers.icc=com.fortify.sca.util.compilers.IntelCompiler
+com.fortify.sca.compilers.icl=com.fortify.sca.util.compilers.MicrosoftCompiler
+com.fortify.sca.compilers.icpc=com.fortify.sca.util.compilers.IntelCompiler
+com.fortify.sca.compilers.jam=com.fortify.sca.util.compilers.TouchlessCompiler
+com.fortify.sca.compilers.javac=com.fortify.sca.util.compilers.JavacCompiler
+com.fortify.sca.compilers.ld=com.fortify.sca.util.compilers.LdCompiler
+com.fortify.sca.compilers.link=com.fortify.sca.util.compilers.MicrosoftLinker
+com.fortify.sca.compilers.make=com.fortify.sca.util.compilers.TouchlessCompiler
+com.fortify.sca.compilers.msbuild=com.fortify.sca.util.compilers.MSBuildAdapter
+com.fortify.sca.compilers.msdev=com.fortify.sca.util.compilers.MSDevAdapter
+com.fortify.sca.compilers.mvn=com.fortify.sca.util.compilers.MavenAdapter
+com.fortify.sca.compilers.nmake=com.fortify.sca.util.compilers.TouchlessCompiler
+com.fortify.sca.compilers.scalac=com.fortify.sca.util.compilers.ScalacCompiler
+com.fortify.sca.compilers.tcc=com.fortify.sca.util.compilers.ArmCcCompiler
+com.fortify.sca.compilers.tcpp=com.fortify.sca.util.compilers.ArmCppCompiler
+com.fortify.sca.compilers.touchless=com.fortify.sca.util.compilers.FortifyCompiler
+com.fortify.sca.compilers.xilink=com.fortify.sca.util.compilers.MicrosoftLinker
+com.fortify.sca.cpfe.441.command=C:\Program Files\Fortify\Fortify_SCA_and_Apps_18.10\Core/private-bin/sca/cpfe441.rfct
+com.fortify.sca.cpfe.command=C:\Program Files\Fortify\Fortify_SCA_and_Apps_18.10\Core/private-bin/sca/cpfe48.exe
+com.fortify.sca.cpfe.file.option=--gen_c_file_name
+com.fortify.sca.cpfe.options=--remove_unneeded_entities --suppress_vtbl -tused
+com.fortify.sca.fileextensions.ABAP=ABAP
+com.fortify.sca.fileextensions.BSP=ABAP
+com.fortify.sca.fileextensions.Config=XML
+com.fortify.sca.fileextensions.Master=ASPNET
+com.fortify.sca.fileextensions.abap=ABAP
+com.fortify.sca.fileextensions.appxmanifest=XML
+com.fortify.sca.fileextensions.as=ACTIONSCRIPT
+com.fortify.sca.fileextensions.asax=ASPNET
+com.fortify.sca.fileextensions.ascx=ASPNET
+com.fortify.sca.fileextensions.ashx=ASPNET
+com.fortify.sca.fileextensions.asmx=ASPNET
+com.fortify.sca.fileextensions.asp=ASP
+com.fortify.sca.fileextensions.aspx=ASPNET
+com.fortify.sca.fileextensions.axml=ASPNET
+com.fortify.sca.fileextensions.baml=MSIL
+com.fortify.sca.fileextensions.bas=VB6
+com.fortify.sca.fileextensions.bsp=ABAP
+com.fortify.sca.fileextensions.cfc=CFML
+com.fortify.sca.fileextensions.cfm=CFML
+com.fortify.sca.fileextensions.cfml=CFML
+com.fortify.sca.fileextensions.cls=VB6
+com.fortify.sca.fileextensions.config=XML
+com.fortify.sca.fileextensions.cpx=XML
+com.fortify.sca.fileextensions.cs=CSHARP
+com.fortify.sca.fileextensions.cscfg=XML
+com.fortify.sca.fileextensions.csdef=XML
+com.fortify.sca.fileextensions.cshtml=ASPNET
+com.fortify.sca.fileextensions.ctl=VB6
+com.fortify.sca.fileextensions.ctp=PHP
+com.fortify.sca.fileextensions.dll=MSIL
+com.fortify.sca.fileextensions.erb=RUBY_ERB
+com.fortify.sca.fileextensions.exe=MSIL
+com.fortify.sca.fileextensions.faces=JSPX
+com.fortify.sca.fileextensions.frm=VB6
+com.fortify.sca.fileextensions.htm=HTML
+com.fortify.sca.fileextensions.html=HTML
+com.fortify.sca.fileextensions.ini=JAVA_PROPERTIES
+com.fortify.sca.fileextensions.java=JAVA
+com.fortify.sca.fileextensions.js=JAVASCRIPT
+com.fortify.sca.fileextensions.jsff=JSPX
+com.fortify.sca.fileextensions.jsp=JSP
+com.fortify.sca.fileextensions.jspx=JSPX
+com.fortify.sca.fileextensions.master=ASPNET
+com.fortify.sca.fileextensions.mdl=MSIL
+com.fortify.sca.fileextensions.mod=MSIL
+com.fortify.sca.fileextensions.mxml=MXML
+com.fortify.sca.fileextensions.page=VISUAL_FORCE
+com.fortify.sca.fileextensions.php=PHP
+com.fortify.sca.fileextensions.phtml=PHP
+com.fortify.sca.fileextensions.pkb=PLSQL
+com.fortify.sca.fileextensions.pkh=PLSQL
+com.fortify.sca.fileextensions.pks=PLSQL
+com.fortify.sca.fileextensions.plist=XML
+com.fortify.sca.fileextensions.properties=JAVA_PROPERTIES
+com.fortify.sca.fileextensions.py=PYTHON
+com.fortify.sca.fileextensions.rb=RUBY
+com.fortify.sca.fileextensions.scala=SCALA
+com.fortify.sca.fileextensions.settings=XML
+com.fortify.sca.fileextensions.sql=SQL
+com.fortify.sca.fileextensions.swift=SWIFT
+com.fortify.sca.fileextensions.tag=JSP
+com.fortify.sca.fileextensions.tagx=JSP
+com.fortify.sca.fileextensions.tld=TLD
+com.fortify.sca.fileextensions.trigger=APEX_TRIGGER
+com.fortify.sca.fileextensions.ts=TYPESCRIPT
+com.fortify.sca.fileextensions.vb=VB
+com.fortify.sca.fileextensions.vbhtml=ASPNET
+com.fortify.sca.fileextensions.vbs=VBSCRIPT
+com.fortify.sca.fileextensions.vbscript=VBSCRIPT
+com.fortify.sca.fileextensions.wadcfg=XML
+com.fortify.sca.fileextensions.wadcfgx=XML
+com.fortify.sca.fileextensions.winmd=MSIL
+com.fortify.sca.fileextensions.wsdd=XML
+com.fortify.sca.fileextensions.wsdl=XML
+com.fortify.sca.fileextensions.xaml=ASPNET
+com.fortify.sca.fileextensions.xcfg=XML
+com.fortify.sca.fileextensions.xhtml=JSPX
+com.fortify.sca.fileextensions.xmi=XML
+com.fortify.sca.fileextensions.xml=XML
+com.fortify.sca.fileextensions.xsd=XML
+com.fortify.sca.jsp.UseNativeParser=true
+com.fortify.sca.parser.python.ignore.module.1=test.badsyntax_future3
+com.fortify.sca.parser.python.ignore.module.2=test.badsyntax_future4
+com.fortify.sca.parser.python.ignore.module.3=test.badsyntax_future5
+com.fortify.sca.parser.python.ignore.module.4=test.badsyntax_future6
+com.fortify.sca.parser.python.ignore.module.5=test.badsyntax_future7
+com.fortify.sca.parser.python.ignore.module.6=test.badsyntax_future8
+com.fortify.sca.parser.python.ignore.module.7=test.badsyntax_future9
+com.fortify.sca.parser.python.ignore.module.8=test.badsyntax_nocaret
+com.fortify.sca.skip.libraries.AngularJS=angular.js,angular.min.js,angular-animate.js,angular-aria.js,angular_1_router.js,angular-cookies.js,angular-message-format.js,angular-messages.js,angular-mocks.js,angular-parse-ext.js,angular-resource.js,angular-route.js,angular-sanitize.js,angular-touch.js
+com.fortify.sca.skip.libraries.ES6=es6-shim.min.js,system-polyfills.js,shims_for_IE.js
+com.fortify.sca.skip.libraries.jQuery=jquery.js,jquery.min.js,jquery-migrate.js,jquery-migrate.min.js,jquery-ui.js,jquery-ui.min.js,jquery.mobile.js,jquery.mobile.min.js,jquery.color.js,jquery.color.min.js,jquery.color.svg-names.js,jquery.color.svg-names.min.js,jquery.color.plus-names.js,jquery.color.plus-names.min.js,jquery.tools.min.js
+com.fortify.sca.skip.libraries.javascript=bootstrap.js,bootstrap.min.js
+
+Fortify Runtime Properties
+com.fortify.AuthenticationKey=C:\Users\Administrator\AppData\Local/Fortify/config/tools
+com.fortify.Core=C:\Program Files\Fortify\Fortify_SCA_and_Apps_18.10\Core
+com.fortify.InstallationUserName=Administrator
+com.fortify.SCAExecutablePath=C:/Program Files/Fortify/Fortify_SCA_and_Apps_18.10/bin/sourceanalyzer.exe
+com.fortify.VS.DefaultFramework.10.0=DotNetFrameworkv40
+com.fortify.VS.DefaultFramework.11.0=DotNetFrameworkv45
+com.fortify.VS.DefaultFramework.12.0=DotNetFrameworkv451
+com.fortify.VS.DefaultFramework.14.0=DotNetFrameworkv451
+com.fortify.VS.Frameworks.DotNetFrameworkv11.SDKRegistry="SOFTWARE\Microsoft\.NETFramework","sdkInstallRootv1.1","\bin"
+com.fortify.VS.Frameworks.DotNetFrameworkv11.VSProjectVersionCode=1;
+com.fortify.VS.Frameworks.DotNetFrameworkv20.SDKRegistry="SOFTWARE\Microsoft\.NETFramework","sdkInstallRootv2.0","\bin"
+com.fortify.VS.Frameworks.DotNetFrameworkv20.VSProjectVersionCode=131072
+com.fortify.VS.Frameworks.DotNetFrameworkv30.SDKRegistry="SOFTWARE\Microsoft\Microsoft SDKs\Windows\v6.0A","InstallationFolder"
+com.fortify.VS.Frameworks.DotNetFrameworkv30.VSProjectVersionCode=196608
+com.fortify.VS.Frameworks.DotNetFrameworkv35.SDKRegistry="SOFTWARE\Microsoft\Microsoft SDKs\Windows\v6.0A","InstallationFolder"
+com.fortify.VS.Frameworks.DotNetFrameworkv35.VSProjectVersionCode=196613
+com.fortify.VS.Frameworks.DotNetFrameworkv40.DotNetFolder="v4.0.30319"
+com.fortify.VS.Frameworks.DotNetFrameworkv40.SDKRegistry="SOFTWARE\Microsoft\Microsoft SDKs\Windows\v7.0A\WinSDK-NetFx40Tools-x86","InstallationFolder"
+com.fortify.VS.Frameworks.DotNetFrameworkv40.VSProjectVersionCode=262144
+com.fortify.VS.Frameworks.DotNetFrameworkv45.DotNetFolder="v4.0.30319"
+com.fortify.VS.Frameworks.DotNetFrameworkv45.SDKPaths="Microsoft SDKs\Windows\v8.0A\bin\NETFX 4.0 Tools\";"Microsoft SDKs\Windows\v8.0A\bin\";"Microsoft SDKs\Windows\v8.0\bin\NETFX 4.0 Tools\";"Microsoft SDKs\Windows\v8.0\bin\"
+com.fortify.VS.Frameworks.DotNetFrameworkv45.SDKRegistry="SOFTWARE\Microsoft\Microsoft SDKs\Windows\v8.0A\WinSDK-NetFx40Tools-x86","InstallationFolder"
+com.fortify.VS.Frameworks.DotNetFrameworkv45.VSProjectVersionCode=262149
+com.fortify.VS.Frameworks.DotNetFrameworkv451.DotNetFolder="v4.0.30319"
+com.fortify.VS.Frameworks.DotNetFrameworkv451.SDKPaths="Microsoft SDKs\Windows\v8.1A\bin\NETFX 4.5.1 Tools\";"Microsoft SDKs\Windows\v8.1A\bin\";"Microsoft SDKs\Windows\v8.1\bin\NETFX 4.5.1 Tools\";"Microsoft SDKs\Windows\v8.1\bin\"
+com.fortify.VS.Frameworks.DotNetFrameworkv451.SDKRegistry="SOFTWARE\Microsoft\Microsoft SDKs\Windows\v8.1A\WinSDK-NetFx40Tools-x86","InstallationFolder"
+com.fortify.VS.Frameworks.DotNetFrameworkv451.VSProjectVersionCode=451
+com.fortify.VS.Frameworks.default.SDKRegistry="SOFTWARE\Microsoft\Microsoft SDKs\Windows\v8.0A\WinSDK-NetFx35Tools-x86","InstallationFolder";"SOFTWARE\Microsoft\Microsoft SDKs\Windows\v7.0A\WinSDK-NetFx35Tools-x86","InstallationFolder";"SOFTWARE\Microsoft\Microsoft SDKs\Windows\v6.1","InstallationFolder","\bin"
+com.fortify.VS.Frameworks.default.VSProjectVersionCode=-1
+com.fortify.VS.RequireASPPrecompilation=true
+com.fortify.WorkingDirectory=C:\Users\Administrator\AppData\Local/Fortify
+com.fortify.locale=en
+com.fortify.search.defaultSyntaxVer=2
+max.file.path.length=255
+
+System Runtime Properties
+awt.toolkit=sun.awt.windows.WToolkit
+com.fortify.InstallRoot=C:\Program Files\Fortify\Fortify_SCA_and_Apps_18.10
+com.fortify.TotalPhysicalMemory=8589467648
+com.fortify.sca.JVMArgs=-XX:SoftRefLRUPolicyMSPerMB=3000 -Xmx6441984000 -Xss16M
+com.fortify.sca.PID=4592
+com.fortify.sca.ProjectRoot=C:\Users\Administrator\AppData\Local/Fortify
+com.fortify.sca.cpfe.options=--remove_unneeded_entities --suppress_vtbl -tused
+com.fortify.sca.env.exesearchpath=C:\Users\Administrator\Desktop\heladeria;C:\Program Files\Fortify\Fortify_SCA_and_Apps_18.10\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\Microsoft.NET\Framework\v4.0.30319;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\dotnet\;C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\Common7\IDE;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Users\Administrator\AppData\Roaming\npm;C:\Users\Administrator\.dotnet\tools
+com.sun.management.jmxremote=true
+dotnet.install.dir=C:\Windows\Microsoft.NET\Framework64\
+dotnet.sdk.v11.install.dir=
+dotnet.sdk.v20.install.dir=
+dotnet.sdk.v3x.install.dir=
+dotnet.v30.referenceAssemblies=C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.0\
+dotnet.v35.referenceAssemblies=C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.5\
+file.encoding=Cp1252
+file.encoding.pkg=sun.io
+file.separator=\
+java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment
+java.awt.headless=true
+java.awt.printerjob=sun.awt.windows.WPrinterJob
+java.class.path=C:\Program Files\Fortify\Fortify_SCA_and_Apps_18.10\Core\lib\exe\sca-exe.jar
+java.class.version=52.0
+java.endorsed.dirs=C:\Program Files\Fortify\Fortify_SCA_and_Apps_18.10\jre\lib\endorsed
+java.ext.dirs=C:\Program Files\Fortify\Fortify_SCA_and_Apps_18.10\jre\lib\ext;C:\Windows\Sun\Java\lib\ext
+java.home=C:\Program Files\Fortify\Fortify_SCA_and_Apps_18.10\jre
+java.io.tmpdir=C:\Users\ADMINI~1\AppData\Local\Temp\2\
+java.library.path=C:\Program Files\Fortify\Fortify_SCA_and_Apps_18.10\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Fortify\Fortify_SCA_and_Apps_18.10\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\Microsoft.NET\Framework\v4.0.30319;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\dotnet\;C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\Common7\IDE;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Users\Administrator\AppData\Roaming\npm;C:\Users\Administrator\.dotnet\tools;.
+java.rmi.server.randomIDs=true
+java.runtime.name=OpenJDK Runtime Environment
+java.runtime.version=1.8.0_163-b01
+java.specification.name=Java Platform API Specification
+java.specification.vendor=Oracle Corporation
+java.specification.version=1.8
+java.vendor=Azul Systems, Inc.
+java.vendor.url=http://www.azulsystems.com/
+java.vendor.url.bug=http://www.azulsystems.com/support/
+java.version=1.8.0_163
+java.vm.info=mixed mode
+java.vm.name=OpenJDK 64-Bit Server VM
+java.vm.specification.name=Java Virtual Machine Specification
+java.vm.specification.vendor=Oracle Corporation
+java.vm.specification.version=1.8
+java.vm.vendor=Azul Systems, Inc.
+java.vm.version=25.163-b01
+line.separator=
+
+os.arch=amd64
+os.name=Windows Server 2012 R2
+os.version=6.3
+path.separator=;
+stderr.isatty=true
+stdout.isatty=true
+sun.arch.data.model=64
+sun.boot.class.path=C:\Program Files\Fortify\Fortify_SCA_and_Apps_18.10\jre\lib\resources.jar;C:\Program Files\Fortify\Fortify_SCA_and_Apps_18.10\jre\lib\rt.jar;C:\Program Files\Fortify\Fortify_SCA_and_Apps_18.10\jre\lib\sunrsasign.jar;C:\Program Files\Fortify\Fortify_SCA_and_Apps_18.10\jre\lib\jsse.jar;C:\Program Files\Fortify\Fortify_SCA_and_Apps_18.10\jre\lib\jce.jar;C:\Program Files\Fortify\Fortify_SCA_and_Apps_18.10\jre\lib\charsets.jar;C:\Program Files\Fortify\Fortify_SCA_and_Apps_18.10\jre\lib\jfr.jar;C:\Program Files\Fortify\Fortify_SCA_and_Apps_18.10\jre\classes
+sun.boot.library.path=C:\Program Files\Fortify\Fortify_SCA_and_Apps_18.10\jre\bin
+sun.cpu.endian=little
+sun.cpu.isalist=amd64
+sun.desktop=windows
+sun.io.unicode.encoding=UnicodeLittle
+sun.java.command=sourceanalyzer -Djava.awt.headless=true -Dcom.sun.management.jmxremote=true -XX:SoftRefLRUPolicyMSPerMB=3000 -Dwin32.LocalAppdata=C:\Users\Administrator\AppData\Local -Ddotnet.install.dir=C:\Windows\Microsoft.NET\Framework64\ -Ddotnet.sdk.v11.install.dir= -Ddotnet.sdk.v20.install.dir= -Ddotnet.sdk.v3x.install.dir= -Ddotnet.v30.referenceAssemblies=C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.0\ -Ddotnet.v35.referenceAssemblies=C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.5\ -Dcom.fortify.sca.env.exesearchpath=C:\Users\Administrator\Desktop\heladeria;C:\Program Files\Fortify\Fortify_SCA_and_Apps_18.10\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\Microsoft.NET\Framework\v4.0.30319;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\dotnet\;C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\Common7\IDE;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Users\Administrator\AppData\Roaming\npm;C:\Users\Administrator\.dotnet\tools -Dcom.fortify.sca.ProjectRoot=C:\Users\Administrator\AppData\Local/Fortify -Dstdout.isatty=true -Dstderr.isatty=true -Dcom.fortify.sca.PID=4592 -Xmx6441984000 -Dcom.fortify.TotalPhysicalMemory=8589467648 -Xss16M -Dcom.fortify.sca.JVMArgs=-XX:SoftRefLRUPolicyMSPerMB=3000 -Xmx6441984000 -Xss16M -Djava.class.path=C:\Program Files\Fortify\Fortify_SCA_and_Apps_18.10\Core\lib\exe\sca-exe.jar -b test_bryant2 -dotnet-website -dotnet-version 4.5 -debug -logfile trans.log msbuild ProyectoHeladeria.sln /t:rebuild /p:Configuration=Debug
+sun.jnu.encoding=Cp1252
+sun.management.compiler=HotSpot 64-Bit Tiered Compilers
+sun.os.patch.level=
+sun.stderr.encoding=cp437
+sun.stdout.encoding=cp437
+user.country=US
+user.dir=C:\Users\Administrator\Desktop\heladeria
+user.home=C:\Users\Administrator
+user.language=en
+user.name=Administrator
+user.script=
+user.timezone=America/Los_Angeles
+user.variant=
+win32.LocalAppdata=C:\Users\Administrator\AppData\Local
+
+VM Info
+OperatingSystemMXBean: Windows Server 2012 R2
+  Arch: amd64
+  AvailableProcessors: 2
+  CommittedVirtualMemorySize: 389292032
+  FreePhysicalMemorySize: 6212661248
+  FreeSwapSpaceSize: 7109451776
+  ProcessCpuLoad: 1.0
+  ProcessCpuTime: 1953125000
+  SystemCpuLoad: 0.0
+  SystemLoadAverage: -1.0
+  TotalPhysicalMemorySize: 8589467648
+  TotalSwapSpaceSize: 9931644928
+  Version: 6.3
+RuntimeMXBean: 4592@WINNGSCA2KEV
+  BootClassPath: C:\Program Files\Fortify\Fortify_SCA_and_Apps_18.10\jre\lib\resources.jar;C:\Program Files\Fortify\Fortify_SCA_and_Apps_18.10\jre\lib\rt.jar;C:\Program Files\Fortify\Fortify_SCA_and_Apps_18.10\jre\lib\sunrsasign.jar;C:\Program Files\Fortify\Fortify_SCA_and_Apps_18.10\jre\lib\jsse.jar;C:\Program Files\Fortify\Fortify_SCA_and_Apps_18.10\jre\lib\jce.jar;C:\Program Files\Fortify\Fortify_SCA_and_Apps_18.10\jre\lib\charsets.jar;C:\Program Files\Fortify\Fortify_SCA_and_Apps_18.10\jre\lib\jfr.jar;C:\Program Files\Fortify\Fortify_SCA_and_Apps_18.10\jre\classes
+  BootClassPathSupported: true
+  ClassPath: C:\Program Files\Fortify\Fortify_SCA_and_Apps_18.10\Core\lib\exe\sca-exe.jar
+  LibraryPath: C:\Program Files\Fortify\Fortify_SCA_and_Apps_18.10\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Fortify\Fortify_SCA_and_Apps_18.10\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\Microsoft.NET\Framework\v4.0.30319;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\dotnet\;C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\Common7\IDE;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Users\Administrator\AppData\Roaming\npm;C:\Users\Administrator\.dotnet\tools;.
+  ManagementSpecVersion: 1.2
+  SpecName: Java Virtual Machine Specification
+  SpecVendor: Oracle Corporation
+  SpecVersion: 1.8
+  StartTime: 1533163476166
+  Uptime: 1518
+  VmName: OpenJDK 64-Bit Server VM
+  VmVendor: Azul Systems, Inc.
+  VmVersion: 25.163-b01
+-----------------------------------------------------------------------------
+[2018-08-01 15:44:37.597 Thread-14 FINE]
+Compiler: msbuild
+[2018-08-01 15:44:37.657 com.fortify.sca.Main$Sourceanalyzer.run() Thread-14 INFO]
+Fortify Static Code Analyzer 18.10.0187 (using JRE 1.8.0_163)
+[2018-08-01 15:44:37.660 com.fortify.sca.Main$Sourceanalyzer.run() Thread-14 INFO]
+Args:
+["-b", "test_bryant2", "-dotnet-website", "-dotnet-version", "4.5", "-debug", "-logfile", "trans.log", "msbuild", "ProyectoHeladeria.sln", "/t:rebuild", "/p:Configuration=Debug"]
+[2018-08-01 15:44:37.660 com.fortify.sca.Main$Sourceanalyzer.run() Thread-14 INFO]
+VM Args:
+"-XX:SoftRefLRUPolicyMSPerMB=3000 -Xmx6441984000 -Xss16M"
+[2018-08-01 15:44:37.745 com.fortify.sca.cmd.SCAConfiguration.initialize() Thread-14 FINE]
+Enabling code generation: Data binding
+[2018-08-01 15:44:37.746 com.fortify.sca.cmd.SCAConfiguration.initialize() Thread-14 FINE]
+Enabling code generation: Event loops
+[2018-08-01 15:44:37.748 com.fortify.sca.cmd.SCAConfiguration.initialize() Thread-14 FINE]
+Enabling change notification transformer.
+[2018-08-01 15:44:37.927 com.fortify.sca.util.compilers.Compiler.runCompiler() Thread-14 FINE]
+Running compiler command: cmd /S /C "msbuild ProyectoHeladeria.sln /t:rebuild /p:Configuration=Debug "/logger:C:\Program Files\Fortify\Fortify_SCA_and_Apps_18.10\Core\lib\FortifyMSBuildTouchless.dll""
+[2018-08-01 15:44:49.027 com.fortify.sca.util.compilers.Compiler.runCompiler() Thread-14 INFO 1102]
+Compiler execution failed (exit code: 1).
+[2018-08-01 15:44:49.030 com.fortify.sca.util.compilers.Compiler.runCompiler() Thread-14 WARNING 20667]
+Compiler Output:
+Microsoft (R) Build Engine version 4.6.1055.0
+[Microsoft .NET Framework, version 4.0.30319.42000]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Building the projects in this solution one at a time. To enable parallel build, please add the "/m" switch.
+Build started 8/1/2018 3:44:38 PM.
+Project "C:\Users\Administrator\Desktop\heladeria\ProyectoHeladeria.sln" on node 1 (rebuild target(s)).
+ValidateSolutionConfiguration:
+  Building solution configuration "Debug|Any CPU".
+Project "C:\Users\Administrator\Desktop\heladeria\ProyectoHeladeria.sln" (1) is building "C:\Users\Administrator\Desktop\heladeria\BackEnd\BackEnd.csproj" (2) on node 1 (Rebuild target(s)).
+Project file contains ToolsVersion="15.0". This toolset may be unknown or missing, in which case you may be able to resolve this by installing the appropriate version of MSBuild, or the build may have been forced to a particular ToolsVersion for policy reasons. Treating the project as if it had ToolsVersion="4.0". For more information, please see http://go.microsoft.com/fwlink/?LinkId=291333.
+CoreClean:
+  Deleting file "C:\Users\Administrator\Desktop\heladeria\BackEnd\bin\Debug\BackEnd.dll.config".
+  Deleting file "C:\Users\Administrator\Desktop\heladeria\BackEnd\bin\Debug\BackEnd.dll".
+  Deleting file "C:\Users\Administrator\Desktop\heladeria\BackEnd\bin\Debug\BackEnd.pdb".
+  Deleting file "C:\Users\Administrator\Desktop\heladeria\BackEnd\bin\Debug\EntityFramework.dll".
+  Deleting file "C:\Users\Administrator\Desktop\heladeria\BackEnd\bin\Debug\EntityFramework.SqlServer.dll".
+  Deleting file "C:\Users\Administrator\Desktop\heladeria\BackEnd\bin\Debug\EntityFramework.xml".
+  Deleting file "C:\Users\Administrator\Desktop\heladeria\BackEnd\bin\Debug\EntityFramework.SqlServer.xml".
+  Deleting file "C:\Users\Administrator\Desktop\heladeria\BackEnd\obj\Debug\BackEnd.csprojResolveAssemblyReference.cache".
+  Deleting file "C:\Users\Administrator\Desktop\heladeria\BackEnd\obj\Debug\BackEnd.dll".
+  Deleting file "C:\Users\Administrator\Desktop\heladeria\BackEnd\obj\Debug\BackEnd.pdb".
+EntityClean:
+  Successfully cleaned the output for EDMX file 'Model\HeladeriaModel.edmx'.
+  Successfully cleaned the output for 1 EDMX files.
+EntityDeployNonEmbeddedResources:
+Skipping target "EntityDeployNonEmbeddedResources" because it has no outputs.
+EntityDeployEmbeddedResources:
+  Processing 1 EDMX files.
+  Starting to process input file 'Model\HeladeriaModel.edmx'.
+  Finished processing input file 'Model\HeladeriaModel.edmx'.
+  Finished processing 1 EDMX files.
+GenerateTargetFrameworkMonikerAttribute:
+Skipping target "GenerateTargetFrameworkMonikerAttribute" because all output files are up-to-date with respect to the input files.
+CoreCompile:
+  C:\Windows\Microsoft.NET\Framework\v4.0.30319\Csc.exe /noconfig /nowarn:1701,1702 /nostdlib+ /errorreport:prompt /warn:4 /define:DEBUG;TRACE /highentropyva+ /reference:C:\Users\Administrator\Desktop\heladeria\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll /reference:C:\Users\Administrator\Desktop\heladeria\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\Microsoft.CSharp.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\mscorlib.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.ComponentModel.DataAnnotations.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.Core.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.Data.DataSetExtensions.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.Data.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.Net.Http.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.Runtime.Serialization.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.Security.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.Xml.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.Xml.Linq.dll" /debug+ /debug:full /filealign:512 /optimize- /out:obj\Debug\BackEnd.dll /subsystemversion:6.00 /resource:obj\Debug\edmxResourcesToEmbed\Model\HeladeriaModel.csdl,Model.HeladeriaModel.csdl /resource:obj\Debug\edmxResourcesToEmbed\Model\HeladeriaModel.msl,Model.HeladeriaModel.msl /resource:obj\Debug\edmxResourcesToEmbed\Model\HeladeriaModel.ssdl,Model.HeladeriaModel.ssdl /target:library /utf8output BLL\Facturas\Anulaciones\AnulacionBLLImpl.cs BLL\Facturas\Anulaciones\IAnulacionBLL.cs BLL\Facturas\DetalleFacturaBLLImpl.cs BLL\Facturas\FacturaBLLImpl.cs BLL\Facturas\IDetalleFacturaBLL.cs BLL\Facturas\IFacturaBLL.cs BLL\Generic\BLLGenericoImpl.cs BLL\Generic\IBLLGenerico.cs BLL\Login\IUserBLL.cs BLL\Login\UserBLLImpl.cs BLL\Productos\IProductoBLL.cs BLL\Productos\ProductoBLLImpl.cs BLL\Proveedores\IProveedorBLL.cs BLL\Proveedores\ProveedorBLLImpl.cs BLL\Personas\IPersonaBLL.cs BLL\Personas\PersonaBLLImpl.cs DAL\Generic\DALGenericoImpl.cs DAL\Generic\IDALGenerico.cs DAL\Generic\UnidadDeTrabajo.cs Model\HeladeriaModel.Context.cs Model\HeladeriaModel.cs Model\HeladeriaModel.Designer.cs Model\Role.cs Model\T_anulaciones.cs Model\T_detalle_factura.cs Model\T_facturas.cs Model\T_personas.cs Model\T_productos.cs Model\T_proveedores.cs Model\User.cs Properties\AssemblyInfo.cs "C:\Users\Administrator\AppData\Local\Temp\2\.NETFramework,Version=v4.6.1.AssemblyAttributes.cs"
+BLL\Generic\BLLGenericoImpl.cs(64,30): warning CS0168: The variable 'e' is declared but never used [C:\Users\Administrator\Desktop\heladeria\BackEnd\BackEnd.csproj]
+BLL\Generic\BLLGenericoImpl.cs(82,30): warning CS0168: The variable 'e' is declared but never used [C:\Users\Administrator\Desktop\heladeria\BackEnd\BackEnd.csproj]
+BLL\Generic\BLLGenericoImpl.cs(100,30): warning CS0168: The variable 'e' is declared but never used [C:\Users\Administrator\Desktop\heladeria\BackEnd\BackEnd.csproj]
+BLL\Generic\BLLGenericoImpl.cs(135,30): warning CS0168: The variable 'e' is declared but never used [C:\Users\Administrator\Desktop\heladeria\BackEnd\BackEnd.csproj]
+BLL\Generic\BLLGenericoImpl.cs(154,30): warning CS0168: The variable 'e' is declared but never used [C:\Users\Administrator\Desktop\heladeria\BackEnd\BackEnd.csproj]
+BLL\Login\UserBLLImpl.cs(77,30): warning CS0168: The variable 'e' is declared but never used [C:\Users\Administrator\Desktop\heladeria\BackEnd\BackEnd.csproj]
+DAL\Generic\DALGenericoImpl.cs(55,30): warning CS0168: The variable 'e' is declared but never used [C:\Users\Administrator\Desktop\heladeria\BackEnd\BackEnd.csproj]
+BLL\Facturas\Anulaciones\AnulacionBLLImpl.cs(18,34): warning CS0169: The field 'BackEnd.BLL.Facturas.Anulaciones.AnulacionBLLImpl.context' is never used [C:\Users\Administrator\Desktop\heladeria\BackEnd\BackEnd.csproj]
+BLL\Facturas\DetalleFacturaBLLImpl.cs(16,34): warning CS0169: The field 'BackEnd.BLL.Facturas.DetalleFacturaBLLImpl.context' is never used [C:\Users\Administrator\Desktop\heladeria\BackEnd\BackEnd.csproj]
+BLL\Facturas\FacturaBLLImpl.cs(17,34): warning CS0169: The field 'BackEnd.BLL.Facturas.FacturaBLLImpl.context' is never used [C:\Users\Administrator\Desktop\heladeria\BackEnd\BackEnd.csproj]
+BLL\Productos\ProductoBLLImpl.cs(17,34): warning CS0169: The field 'BackEnd.BLL.Productos.ProductoBLLImpl.context' is never used [C:\Users\Administrator\Desktop\heladeria\BackEnd\BackEnd.csproj]
+BLL\Proveedores\ProveedorBLLImpl.cs(17,34): warning CS0169: The field 'BackEnd.BLL.Proveedores.ProveedorBLLImpl.context' is never used [C:\Users\Administrator\Desktop\heladeria\BackEnd\BackEnd.csproj]
+BLL\Personas\PersonaBLLImpl.cs(17,34): warning CS0169: The field 'BackEnd.BLL.Personas.PersonaBLLImpl.context' is never used [C:\Users\Administrator\Desktop\heladeria\BackEnd\BackEnd.csproj]
+_CopyFilesMarkedCopyLocal:
+  Copying file from "C:\Users\Administrator\Desktop\heladeria\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll" to "bin\Debug\EntityFramework.dll".
+  Copying file from "C:\Users\Administrator\Desktop\heladeria\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll" to "bin\Debug\EntityFramework.SqlServer.dll".
+  Copying file from "C:\Users\Administrator\Desktop\heladeria\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.xml" to "bin\Debug\EntityFramework.xml".
+  Copying file from "C:\Users\Administrator\Desktop\heladeria\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.xml" to "bin\Debug\EntityFramework.SqlServer.xml".
+_CopyAppConfigFile:
+  Copying file from "App.Config" to "bin\Debug\BackEnd.dll.config".
+CopyFilesToOutputDirectory:
+  Copying file from "obj\Debug\BackEnd.dll" to "bin\Debug\BackEnd.dll".
+  BackEnd -> C:\Users\Administrator\Desktop\heladeria\BackEnd\bin\Debug\BackEnd.dll
+  Copying file from "obj\Debug\BackEnd.pdb" to "bin\Debug\BackEnd.pdb".
+Running: INFO :  "-show-runtime-properties" 
+Running: TRANSLATE :  "-Xmx6441984000" "-Xss16M" -dotnet-version 4.6.1   @"C:\Users\Administrator\AppData\Local\Fortify\MSBuildPlugin\heladeria\BackEnd_Build.txt"
+Done Building Project "C:\Users\Administrator\Desktop\heladeria\BackEnd\BackEnd.csproj" (Rebuild target(s)).
+The target "PipelineCollectFilesPhase" listed in a BeforeTargets attribute at "C:\Users\Administrator\Desktop\heladeria\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props (9,75)" does not exist in the project, and will be ignored.
+Project "C:\Users\Administrator\Desktop\heladeria\ProyectoHeladeria.sln" (1) is building "C:\Users\Administrator\Desktop\heladeria\FrontEnd\FrontEnd.csproj" (3) on node 1 (Rebuild target(s)).
+Project file contains ToolsVersion="15.0". This toolset may be unknown or missing, in which case you may be able to resolve this by installing the appropriate version of MSBuild, or the build may have been forced to a particular ToolsVersion for policy reasons. Treating the project as if it had ToolsVersion="4.0". For more information, please see http://go.microsoft.com/fwlink/?LinkId=291333.
+CoreClean:
+  Deleting file "C:\Users\Administrator\Desktop\heladeria\FrontEnd\bin\Antlr3.Runtime.dll".
+  Deleting file "C:\Users\Administrator\Desktop\heladeria\FrontEnd\bin\Microsoft.AI.Agent.Intercept.dll".
+  Deleting file "C:\Users\Administrator\Desktop\heladeria\FrontEnd\bin\Microsoft.AI.DependencyCollector.dll".
+  Deleting file "C:\Users\Administrator\Desktop\heladeria\FrontEnd\bin\Microsoft.AI.PerfCounterCollector.dll".
+  Deleting file "C:\Users\Administrator\Desktop\heladeria\FrontEnd\bin\Microsoft.AI.ServerTelemetryChannel.dll".
+  Deleting file "C:\Users\Administrator\Desktop\heladeria\FrontEnd\bin\Microsoft.AI.Web.dll".
+  Deleting file "C:\Users\Administrator\Desktop\heladeria\FrontEnd\bin\Microsoft.AI.WindowsServer.dll".
+  Deleting file "C:\Users\Administrator\Desktop\heladeria\FrontEnd\bin\Microsoft.ApplicationInsights.dll".
+  Deleting file "C:\Users\Administrator\Desktop\heladeria\FrontEnd\bin\Microsoft.AspNet.TelemetryCorrelation.dll".
+  Deleting file "C:\Users\Administrator\Desktop\heladeria\FrontEnd\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll".
+  Deleting file "C:\Users\Administrator\Desktop\heladeria\FrontEnd\bin\Microsoft.Web.Infrastructure.dll".
+  Deleting file "C:\Users\Administrator\Desktop\heladeria\FrontEnd\bin\Newtonsoft.Json.dll".
+  Deleting file "C:\Users\Administrator\Desktop\heladeria\FrontEnd\bin\System.Diagnostics.DiagnosticSource.dll".
+  Deleting file "C:\Users\Administrator\Desktop\heladeria\FrontEnd\bin\System.Web.Helpers.dll".
+  Deleting file "C:\Users\Administrator\Desktop\heladeria\FrontEnd\bin\System.Web.Mvc.dll".
+  Deleting file "C:\Users\Administrator\Desktop\heladeria\FrontEnd\bin\System.Web.Optimization.dll".
+  Deleting file "C:\Users\Administrator\Desktop\heladeria\FrontEnd\bin\System.Web.Razor.dll".
+  Deleting file "C:\Users\Administrator\Desktop\heladeria\FrontEnd\bin\System.Web.WebPages.Deployment.dll".
+  Deleting file "C:\Users\Administrator\Desktop\heladeria\FrontEnd\bin\System.Web.WebPages.dll".
+  Deleting file "C:\Users\Administrator\Desktop\heladeria\FrontEnd\bin\System.Web.WebPages.Razor.dll".
+  Deleting file "C:\Users\Administrator\Desktop\heladeria\FrontEnd\bin\WebGrease.dll".
+  Deleting file "C:\Users\Administrator\Desktop\heladeria\FrontEnd\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml".
+  Deleting file "C:\Users\Administrator\Desktop\heladeria\FrontEnd\obj\Debug\FrontEnd.csprojResolveAssemblyReference.cache".
+PreComputeCompileTypeScript:
+  C:\Program Files (x86)\Microsoft SDKs\TypeScript\2.1\tsc.exe  --sourcemap --target ES5 --noEmitOnError --listEmittedFiles "C:\Users\Administrator\Desktop\heladeria\FrontEnd\Scripts\index.d.ts"
+DeleteCompilerOutput:
+  Deleting file "C:\Users\Administrator\Desktop\heladeria\FrontEnd\obj\Debug\TypeScriptCompilerOutput.txt".
+Project "C:\Users\Administrator\Desktop\heladeria\FrontEnd\FrontEnd.csproj" (3) is building "C:\Users\Administrator\Desktop\heladeria\BackEnd\BackEnd.csproj" (2:4) on node 1 (GetNativeManifest target(s)).
+Project file contains ToolsVersion="15.0". This toolset may be unknown or missing, in which case you may be able to resolve this by installing the appropriate version of MSBuild, or the build may have been forced to a particular ToolsVersion for policy reasons. Treating the project as if it had ToolsVersion="4.0". For more information, please see http://go.microsoft.com/fwlink/?LinkId=291333.
+Done Building Project "C:\Users\Administrator\Desktop\heladeria\BackEnd\BackEnd.csproj" (GetNativeManifest target(s)).
+ResolveAssemblyReferences:
+  Consider app.config remapping of assembly "Microsoft.AspNet.TelemetryCorrelation, Culture=neutral, PublicKeyToken=31bf3856ad364e35" from Version "1.0.1.0" [] to Version "1.0.3.0" [C:\Users\Administrator\Desktop\heladeria\packages\Microsoft.AspNet.TelemetryCorrelation.1.0.3\lib\net45\Microsoft.AspNet.TelemetryCorrelation.dll] to solve conflict and get rid of warning.
+  Consider app.config remapping of assembly "WebGrease, Culture=neutral, PublicKeyToken=31bf3856ad364e35" from Version "1.5.1.25624" [] to Version "1.6.5135.21930" [C:\Users\Administrator\Desktop\heladeria\packages\WebGrease.1.6.0\lib\WebGrease.dll] to solve conflict and get rid of warning.
+  Consider app.config remapping of assembly "System.Diagnostics.DiagnosticSource, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51" from Version "4.0.2.0" [] to Version "4.0.3.0" [C:\Users\Administrator\Desktop\heladeria\packages\System.Diagnostics.DiagnosticSource.4.5.0\lib\net46\System.Diagnostics.DiagnosticSource.dll] to solve conflict and get rid of warning.
+  Consider app.config remapping of assembly "Newtonsoft.Json, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed" from Version "4.5.0.0" [] to Version "11.0.0.0" [C:\Users\Administrator\Desktop\heladeria\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll] to solve conflict and get rid of warning.
+  Consider app.config remapping of assembly "Antlr3.Runtime, Culture=neutral, PublicKeyToken=eb42632606e9261f" from Version "3.4.1.9004" [] to Version "3.5.0.2" [C:\Users\Administrator\Desktop\heladeria\packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll] to solve conflict and get rid of warning.
+C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets(1605,5): warning MSB3247: Found conflicts between different versions of the same dependent assembly. [C:\Users\Administrator\Desktop\heladeria\FrontEnd\FrontEnd.csproj]
+CompileTypeScript:
+  C:\Program Files (x86)\Microsoft SDKs\TypeScript\2.1\tsc.exe  --sourcemap --target ES5 --noEmitOnError --listEmittedFiles "C:\Users\Administrator\Desktop\heladeria\FrontEnd\Scripts\index.d.ts"
+GenerateTargetFrameworkMonikerAttribute:
+Skipping target "GenerateTargetFrameworkMonikerAttribute" because all output files are up-to-date with respect to the input files.
+C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.CSharp.targets(316,9): error MSB4062: The "Microsoft.CodeAnalysis.BuildTasks.Csc" task could not be loaded from the assembly C:\Users\Administrator\Desktop\heladeria\packages\Microsoft.Net.Compilers.2.8.2\build\..\tools\Microsoft.Build.Tasks.CodeAnalysis.dll. Could not load file or assembly 'Microsoft.Build.Utilities.Core, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a' or one of its dependencies. The system cannot find the file specified. Confirm that the <UsingTask> declaration is correct, that the assembly and all its dependencies are available, and that the task contains a public class that implements Microsoft.Build.Framework.ITask. [C:\Users\Administrator\Desktop\heladeria\FrontEnd\FrontEnd.csproj]
+Running: TRANSLATE :  "-Xmx6441984000" "-Xss16M" -dotnet-version 4.6.1   @"C:\Users\Administrator\AppData\Local\Fortify\MSBuildPlugin\heladeria\FrontEnd_Build.txt"
+Done Building Project "C:\Users\Administrator\Desktop\heladeria\FrontEnd\FrontEnd.csproj" (Rebuild target(s)) -- FAILED.
+Project "C:\Users\Administrator\Desktop\heladeria\ProyectoHeladeria.sln" (1) is building "C:\Users\Administrator\Desktop\heladeria\UnitTests\UnitTests.csproj" (4) on node 1 (Rebuild target(s)).
+Project file contains ToolsVersion="15.0". This toolset may be unknown or missing, in which case you may be able to resolve this by installing the appropriate version of MSBuild, or the build may have been forced to a particular ToolsVersion for policy reasons. Treating the project as if it had ToolsVersion="4.0". For more information, please see http://go.microsoft.com/fwlink/?LinkId=291333.
+CoreClean:
+  Deleting file "C:\Users\Administrator\Desktop\heladeria\UnitTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll".
+  Deleting file "C:\Users\Administrator\Desktop\heladeria\UnitTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll".
+  Deleting file "C:\Users\Administrator\Desktop\heladeria\UnitTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll".
+  Deleting file "C:\Users\Administrator\Desktop\heladeria\UnitTests\bin\Debug\UnitTests.dll.config".
+  Deleting file "C:\Users\Administrator\Desktop\heladeria\UnitTests\bin\Debug\UnitTests.dll".
+  Deleting file "C:\Users\Administrator\Desktop\heladeria\UnitTests\bin\Debug\UnitTests.pdb".
+  Deleting file "C:\Users\Administrator\Desktop\heladeria\UnitTests\bin\Debug\BackEnd.dll".
+  Deleting file "C:\Users\Administrator\Desktop\heladeria\UnitTests\bin\Debug\EntityFramework.dll".
+  Deleting file "C:\Users\Administrator\Desktop\heladeria\UnitTests\bin\Debug\EntityFramework.SqlServer.dll".
+  Deleting file "C:\Users\Administrator\Desktop\heladeria\UnitTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll".
+  Deleting file "C:\Users\Administrator\Desktop\heladeria\UnitTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll".
+  Deleting file "C:\Users\Administrator\Desktop\heladeria\UnitTests\bin\Debug\BackEnd.pdb".
+  Deleting file "C:\Users\Administrator\Desktop\heladeria\UnitTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml".
+  Deleting file "C:\Users\Administrator\Desktop\heladeria\UnitTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml".
+  Deleting file "C:\Users\Administrator\Desktop\heladeria\UnitTests\obj\Debug\UnitTests.csprojResolveAssemblyReference.cache".
+  Deleting file "C:\Users\Administrator\Desktop\heladeria\UnitTests\obj\Debug\UnitTests.dll".
+  Deleting file "C:\Users\Administrator\Desktop\heladeria\UnitTests\obj\Debug\UnitTests.pdb".
+GenerateTargetFrameworkMonikerAttribute:
+Skipping target "GenerateTargetFrameworkMonikerAttribute" because all output files are up-to-date with respect to the input files.
+CoreCompile:
+  C:\Windows\Microsoft.NET\Framework\v4.0.30319\Csc.exe /noconfig /nowarn:1701,1702 /nostdlib+ /errorreport:prompt /warn:4 /define:DEBUG;TRACE /highentropyva+ /reference:C:\Users\Administrator\Desktop\heladeria\BackEnd\bin\Debug\BackEnd.dll /reference:C:\Users\Administrator\Desktop\heladeria\BackEnd\EntityFramework.dll /reference:C:\Users\Administrator\Desktop\heladeria\BackEnd\EntityFramework.SqlServer.dll /reference:C:\Users\Administrator\Desktop\heladeria\packages\MSTest.TestFramework.1.3.2\lib\net45\Microsoft.VisualStudio.TestPlatform.TestFramework.dll /reference:C:\Users\Administrator\Desktop\heladeria\packages\MSTest.TestFramework.1.3.2\lib\net45\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\mscorlib.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.Core.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\Facades\System.Collections.Concurrent.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\Facades\System.Collections.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\Facades\System.ComponentModel.Annotations.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\Facades\System.ComponentModel.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\Facades\System.ComponentModel.EventBasedAsync.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\Facades\System.Diagnostics.Contracts.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\Facades\System.Diagnostics.Debug.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\Facades\System.Diagnostics.Tools.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\Facades\System.Diagnostics.Tracing.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\Facades\System.Dynamic.Runtime.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\Facades\System.Globalization.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\Facades\System.IO.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\Facades\System.Linq.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\Facades\System.Linq.Expressions.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\Facades\System.Linq.Parallel.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\Facades\System.Linq.Queryable.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\Facades\System.Net.NetworkInformation.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\Facades\System.Net.Primitives.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\Facades\System.Net.Requests.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\Facades\System.Net.WebHeaderCollection.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\Facades\System.ObjectModel.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\Facades\System.Reflection.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\Facades\System.Reflection.Emit.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\Facades\System.Reflection.Emit.ILGeneration.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\Facades\System.Reflection.Emit.Lightweight.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\Facades\System.Reflection.Extensions.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\Facades\System.Reflection.Primitives.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\Facades\System.Resources.ResourceManager.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\Facades\System.Runtime.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\Facades\System.Runtime.Extensions.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\Facades\System.Runtime.Handles.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\Facades\System.Runtime.InteropServices.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\Facades\System.Runtime.InteropServices.WindowsRuntime.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\Facades\System.Runtime.Numerics.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\Facades\System.Runtime.Serialization.Json.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\Facades\System.Runtime.Serialization.Primitives.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\Facades\System.Runtime.Serialization.Xml.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\Facades\System.Security.Principal.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\Facades\System.ServiceModel.Duplex.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\Facades\System.ServiceModel.Http.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\Facades\System.ServiceModel.NetTcp.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\Facades\System.ServiceModel.Primitives.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\Facades\System.ServiceModel.Security.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\Facades\System.Text.Encoding.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\Facades\System.Text.Encoding.Extensions.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\Facades\System.Text.RegularExpressions.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\Facades\System.Threading.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\Facades\System.Threading.Tasks.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\Facades\System.Threading.Tasks.Parallel.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\Facades\System.Threading.Timer.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\Facades\System.Xml.ReaderWriter.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\Facades\System.Xml.XDocument.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\Facades\System.Xml.XmlSerializer.dll" /debug+ /debug:full /filealign:512 /optimize- /out:obj\Debug\UnitTests.dll /subsystemversion:6.00 /target:library /utf8output Properties\AssemblyInfo.cs pruebasUsuario.cs pruebasProveedor.cs pruebasProducto.cs pruebasFactura.cs pruebasAnulacion.cs "C:\Users\Administrator\AppData\Local\Temp\2\.NETFramework,Version=v4.6.1.AssemblyAttributes.cs"
+_CopyFilesMarkedCopyLocal:
+  Copying file from "C:\Users\Administrator\Desktop\heladeria\BackEnd\bin\Debug\BackEnd.dll" to "bin\Debug\BackEnd.dll".
+  Copying file from "C:\Users\Administrator\Desktop\heladeria\BackEnd\EntityFramework.dll" to "bin\Debug\EntityFramework.dll".
+  Copying file from "C:\Users\Administrator\Desktop\heladeria\BackEnd\EntityFramework.SqlServer.dll" to "bin\Debug\EntityFramework.SqlServer.dll".
+  Copying file from "C:\Users\Administrator\Desktop\heladeria\packages\MSTest.TestFramework.1.3.2\lib\net45\Microsoft.VisualStudio.TestPlatform.TestFramework.dll" to "bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll".
+  Copying file from "C:\Users\Administrator\Desktop\heladeria\packages\MSTest.TestFramework.1.3.2\lib\net45\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll" to "bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll".
+  Copying file from "C:\Users\Administrator\Desktop\heladeria\BackEnd\bin\Debug\BackEnd.pdb" to "bin\Debug\BackEnd.pdb".
+  Copying file from "C:\Users\Administrator\Desktop\heladeria\packages\MSTest.TestFramework.1.3.2\lib\net45\Microsoft.VisualStudio.TestPlatform.TestFramework.xml" to "bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml".
+  Copying file from "C:\Users\Administrator\Desktop\heladeria\packages\MSTest.TestFramework.1.3.2\lib\net45\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml" to "bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml".
+_CopyOutOfDateSourceItemsToOutputDirectory:
+  Copying file from "C:\Users\Administrator\Desktop\heladeria\packages\MSTest.TestAdapter.1.3.2\build\_common\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll" to "bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll".
+  Copying file from "C:\Users\Administrator\Desktop\heladeria\packages\MSTest.TestAdapter.1.3.2\build\_common\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll" to "bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll".
+  Copying file from "C:\Users\Administrator\Desktop\heladeria\packages\MSTest.TestAdapter.1.3.2\build\_common\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll" to "bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll".
+_CopyAppConfigFile:
+  Copying file from "App.Config" to "bin\Debug\UnitTests.dll.config".
+CopyFilesToOutputDirectory:
+  Copying file from "obj\Debug\UnitTests.dll" to "bin\Debug\UnitTests.dll".
+  UnitTests -> C:\Users\Administrator\Desktop\heladeria\UnitTests\bin\Debug\UnitTests.dll
+  Copying file from "obj\Debug\UnitTests.pdb" to "bin\Debug\UnitTests.pdb".
+Running: TRANSLATE :  "-Xmx6441984000" "-Xss16M" -dotnet-version 4.6.1   @"C:\Users\Administrator\AppData\Local\Fortify\MSBuildPlugin\heladeria\UnitTests_Build.txt"
+Done Building Project "C:\Users\Administrator\Desktop\heladeria\UnitTests\UnitTests.csproj" (Rebuild target(s)).
+Done Building Project "C:\Users\Administrator\Desktop\heladeria\ProyectoHeladeria.sln" (rebuild target(s)) -- FAILED.
+
+Build FAILED.
+
+"C:\Users\Administrator\Desktop\heladeria\ProyectoHeladeria.sln" (rebuild target) (1) ->
+"C:\Users\Administrator\Desktop\heladeria\BackEnd\BackEnd.csproj" (Rebuild target) (2) ->
+(CoreCompile target) -> 
+  BLL\Generic\BLLGenericoImpl.cs(64,30): warning CS0168: The variable 'e' is declared but never used [C:\Users\Administrator\Desktop\heladeria\BackEnd\BackEnd.csproj]
+  BLL\Generic\BLLGenericoImpl.cs(82,30): warning CS0168: The variable 'e' is declared but never used [C:\Users\Administrator\Desktop\heladeria\BackEnd\BackEnd.csproj]
+  BLL\Generic\BLLGenericoImpl.cs(100,30): warning CS0168: The variable 'e' is declared but never used [C:\Users\Administrator\Desktop\heladeria\BackEnd\BackEnd.csproj]
+  BLL\Generic\BLLGenericoImpl.cs(135,30): warning CS0168: The variable 'e' is declared but never used [C:\Users\Administrator\Desktop\heladeria\BackEnd\BackEnd.csproj]
+  BLL\Generic\BLLGenericoImpl.cs(154,30): warning CS0168: The variable 'e' is declared but never used [C:\Users\Administrator\Desktop\heladeria\BackEnd\BackEnd.csproj]
+  BLL\Login\UserBLLImpl.cs(77,30): warning CS0168: The variable 'e' is declared but never used [C:\Users\Administrator\Desktop\heladeria\BackEnd\BackEnd.csproj]
+  DAL\Generic\DALGenericoImpl.cs(55,30): warning CS0168: The variable 'e' is declared but never used [C:\Users\Administrator\Desktop\heladeria\BackEnd\BackEnd.csproj]
+  BLL\Facturas\Anulaciones\AnulacionBLLImpl.cs(18,34): warning CS0169: The field 'BackEnd.BLL.Facturas.Anulaciones.AnulacionBLLImpl.context' is never used [C:\Users\Administrator\Desktop\heladeria\BackEnd\BackEnd.csproj]
+  BLL\Facturas\DetalleFacturaBLLImpl.cs(16,34): warning CS0169: The field 'BackEnd.BLL.Facturas.DetalleFacturaBLLImpl.context' is never used [C:\Users\Administrator\Desktop\heladeria\BackEnd\BackEnd.csproj]
+  BLL\Facturas\FacturaBLLImpl.cs(17,34): warning CS0169: The field 'BackEnd.BLL.Facturas.FacturaBLLImpl.context' is never used [C:\Users\Administrator\Desktop\heladeria\BackEnd\BackEnd.csproj]
+  BLL\Productos\ProductoBLLImpl.cs(17,34): warning CS0169: The field 'BackEnd.BLL.Productos.ProductoBLLImpl.context' is never used [C:\Users\Administrator\Desktop\heladeria\BackEnd\BackEnd.csproj]
+  BLL\Proveedores\ProveedorBLLImpl.cs(17,34): warning CS0169: The field 'BackEnd.BLL.Proveedores.ProveedorBLLImpl.context' is never used [C:\Users\Administrator\Desktop\heladeria\BackEnd\BackEnd.csproj]
+  BLL\Personas\PersonaBLLImpl.cs(17,34): warning CS0169: The field 'BackEnd.BLL.Personas.PersonaBLLImpl.context' is never used [C:\Users\Administrator\Desktop\heladeria\BackEnd\BackEnd.csproj]
+
+
+"C:\Users\Administrator\Desktop\heladeria\ProyectoHeladeria.sln" (rebuild target) (1) ->
+"C:\Users\Administrator\Desktop\heladeria\FrontEnd\FrontEnd.csproj" (Rebuild target) (3) ->
+(ResolveAssemblyReferences target) -> 
+  C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets(1605,5): warning MSB3247: Found conflicts between different versions of the same dependent assembly. [C:\Users\Administrator\Desktop\heladeria\FrontEnd\FrontEnd.csproj]
+
+
+"C:\Users\Administrator\Desktop\heladeria\ProyectoHeladeria.sln" (rebuild target) (1) ->
+"C:\Users\Administrator\Desktop\heladeria\FrontEnd\FrontEnd.csproj" (Rebuild target) (3) ->
+(CoreCompile target) -> 
+  C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.CSharp.targets(316,9): error MSB4062: The "Microsoft.CodeAnalysis.BuildTasks.Csc" task could not be loaded from the assembly C:\Users\Administrator\Desktop\heladeria\packages\Microsoft.Net.Compilers.2.8.2\build\..\tools\Microsoft.Build.Tasks.CodeAnalysis.dll. Could not load file or assembly 'Microsoft.Build.Utilities.Core, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a' or one of its dependencies. The system cannot find the file specified. Confirm that the <UsingTask> declaration is correct, that the assembly and all its dependencies are available, and that the task contains a public class that implements Microsoft.Build.Framework.ITask. [C:\Users\Administrator\Desktop\heladeria\FrontEnd\FrontEnd.csproj]
+
+    14 Warning(s)
+    1 Error(s)
+
+Time Elapsed 00:00:10.85
+
+
+[2018-08-01 15:44:49.050 com.fortify.sca.Main.exit() Thread-1 WARNING 20213]
+exit(1)

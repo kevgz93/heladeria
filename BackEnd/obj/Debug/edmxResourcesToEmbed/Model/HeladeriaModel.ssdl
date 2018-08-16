@@ -49,6 +49,7 @@
     <Property Name="apellido2" Type="varchar" MaxLength="20" Nullable="false" />
     <Property Name="telefono" Type="varchar" MaxLength="15" Nullable="false" />
     <Property Name="correo" Type="varchar" MaxLength="35" Nullable="false" />
+    <Property Name="tipo" Type="varchar" MaxLength="15" Nullable="false" />
     <Property Name="sexo" Type="varchar" MaxLength="10" Nullable="false" />
   </EntityType>
   <EntityType Name="T_productos">
@@ -207,6 +208,10 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <Function Name="sp_AddUsersInRoles" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="roleId" Type="int" Mode="In" />
+    <Parameter Name="userId" Type="int" Mode="In" />
+  </Function>
   <Function Name="sp_getRolesForUser" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
     <Parameter Name="userName" Type="varchar" Mode="In" />
   </Function>
@@ -216,6 +221,10 @@
   <Function Name="sp_isUserInRole" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
     <Parameter Name="userName" Type="varchar" Mode="In" />
     <Parameter Name="roleName" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="sp_updateRoleByUser" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="userId" Type="int" Mode="In" />
+    <Parameter Name="roleID" Type="int" Mode="In" />
   </Function>
   <EntityContainer Name="HeladeriaModelStoreContainer">
     <EntitySet Name="Roles" EntityType="Self.Roles" Schema="dbo" store:Type="Tables" />

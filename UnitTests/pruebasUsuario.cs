@@ -79,5 +79,17 @@ namespace UnitTests
             }
 
         }
+
+        [TestMethod]
+        public void getRoleForUser()
+        {
+            string[] usuarios;
+            IUserBLL usuarioBLL = new UserBLLImpl();
+
+            usuarios = usuarioBLL.gerRolesForUser("kevin");
+
+            
+
+        }
     }
 }

@@ -1,4 +1,5 @@
-﻿using BackEnd.Model;
+﻿using BackEnd.BLL.Generic;
+using BackEnd.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,11 +8,12 @@ using System.Threading.Tasks;
 
 namespace BackEnd.BLL
 {
-    public interface IUserBLL
+    public interface IUserBLL : IBLLGenerico<User>
     {
 
         bool insertar(int idRole, string login);
         bool insertar(string roleName, string login);
+        bool insertar(User user);
         User getUser(string userName);
         User getUser(string userName, string password);
         User getUser(int EmpleadoId);

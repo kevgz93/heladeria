@@ -54,6 +54,7 @@
           <Property Name="apellido2" Type="varchar" MaxLength="20" Nullable="false" />
           <Property Name="telefono" Type="varchar" MaxLength="15" Nullable="false" />
           <Property Name="correo" Type="varchar" MaxLength="35" Nullable="false" />
+          <Property Name="tipo" Type="varchar" MaxLength="15" Nullable="false" />
           <Property Name="sexo" Type="varchar" MaxLength="10" Nullable="false" />
         </EntityType>
         <EntityType Name="T_productos">
@@ -212,6 +213,10 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <Function Name="sp_AddUsersInRoles" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="roleId" Type="int" Mode="In" />
+          <Parameter Name="userId" Type="int" Mode="In" />
+        </Function>
         <Function Name="sp_getRolesForUser" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="userName" Type="varchar" Mode="In" />
         </Function>
@@ -221,6 +226,10 @@
         <Function Name="sp_isUserInRole" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="userName" Type="varchar" Mode="In" />
           <Parameter Name="roleName" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="sp_updateRoleByUser" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="userId" Type="int" Mode="In" />
+          <Parameter Name="roleID" Type="int" Mode="In" />
         </Function>
         <EntityContainer Name="HeladeriaModelStoreContainer">
           <EntitySet Name="Roles" EntityType="Self.Roles" Schema="dbo" store:Type="Tables" />
@@ -334,6 +343,7 @@
           <NavigationProperty Name="T_anulaciones" Relationship="Self.FK_T_anulaciones_T_usuarios" FromRole="T_personas" ToRole="T_anulaciones" />
           <NavigationProperty Name="T_facturas" Relationship="Self.FK_T_facturas_T_usuarios" FromRole="T_personas" ToRole="T_facturas" />
           <NavigationProperty Name="Users" Relationship="Self.FK_Users_T_personas" FromRole="T_personas" ToRole="Users" />
+          <Property Name="tipo" Type="String" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
         </EntityType>
         <EntityType Name="T_productos">
           <Key>
@@ -515,6 +525,14 @@
             <Parameter Name="userName" Mode="In" Type="String" />
             <Parameter Name="roleName" Mode="In" Type="String" />
           </FunctionImport>
+          <FunctionImport Name="sp_AddUsersInRoles">
+            <Parameter Name="roleId" Mode="In" Type="Int32" />
+            <Parameter Name="userId" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="sp_updateRoleByUser">
+            <Parameter Name="userId" Mode="In" Type="Int32" />
+            <Parameter Name="roleID" Mode="In" Type="Int32" />
+          </FunctionImport>
         </EntityContainer>
       </Schema>
     </edmx:ConceptualModels>
@@ -567,6 +585,7 @@
           <EntitySetMapping Name="T_personas">
             <EntityTypeMapping TypeName="HeladeriaModel.T_personas">
               <MappingFragment StoreEntitySet="T_personas">
+                <ScalarProperty Name="tipo" ColumnName="tipo" />
                 <ScalarProperty Name="id_persona" ColumnName="id_persona" />
                 <ScalarProperty Name="cedula" ColumnName="cedula" />
                 <ScalarProperty Name="nombre" ColumnName="nombre" />
@@ -628,6 +647,8 @@
           <FunctionImportMapping FunctionImportName="sp_getRolesForUser" FunctionName="HeladeriaModel.Store.sp_getRolesForUser" />
           <FunctionImportMapping FunctionImportName="sp_getUsuariosRole" FunctionName="HeladeriaModel.Store.sp_getUsuariosRole" />
           <FunctionImportMapping FunctionImportName="sp_isUserInRole" FunctionName="HeladeriaModel.Store.sp_isUserInRole" />
+          <FunctionImportMapping FunctionImportName="sp_AddUsersInRoles" FunctionName="HeladeriaModel.Store.sp_AddUsersInRoles" />
+          <FunctionImportMapping FunctionImportName="sp_updateRoleByUser" FunctionName="HeladeriaModel.Store.sp_updateRoleByUser" />
         </EntityContainerMapping>
       </Mapping>
     </edmx:Mappings>

@@ -46,6 +46,7 @@
     <EntitySetMapping Name="T_personas">
       <EntityTypeMapping TypeName="HeladeriaModel.T_personas">
         <MappingFragment StoreEntitySet="T_personas">
+          <ScalarProperty Name="tipo" ColumnName="tipo" />
           <ScalarProperty Name="id_persona" ColumnName="id_persona" />
           <ScalarProperty Name="cedula" ColumnName="cedula" />
           <ScalarProperty Name="nombre" ColumnName="nombre" />
@@ -107,5 +108,7 @@
     <FunctionImportMapping FunctionImportName="sp_getRolesForUser" FunctionName="HeladeriaModel.Store.sp_getRolesForUser" />
     <FunctionImportMapping FunctionImportName="sp_getUsuariosRole" FunctionName="HeladeriaModel.Store.sp_getUsuariosRole" />
     <FunctionImportMapping FunctionImportName="sp_isUserInRole" FunctionName="HeladeriaModel.Store.sp_isUserInRole" />
+    <FunctionImportMapping FunctionImportName="sp_AddUsersInRoles" FunctionName="HeladeriaModel.Store.sp_AddUsersInRoles" />
+    <FunctionImportMapping FunctionImportName="sp_updateRoleByUser" FunctionName="HeladeriaModel.Store.sp_updateRoleByUser" />
   </EntityContainerMapping>
 </Mapping>
