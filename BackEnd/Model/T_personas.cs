@@ -30,7 +30,6 @@ namespace BackEnd.Model
         public string telefono { get; set; }
         public string correo { get; set; }
         public string sexo { get; set; }
-        public string tipo { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<T_anulaciones> T_anulaciones { get; set; }

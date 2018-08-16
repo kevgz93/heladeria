@@ -22,16 +22,25 @@
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
                     <li>@Html.ActionLink("Catalogo", "Index", "Catalogo")</li>
-<<<<<<< HEAD
+
                     <li>@Html.ActionLink("Usuarios", "Index", "Persona")</li>
-=======
+
                     <li>@Html.ActionLink("Contactenos", "Contacto", "Home")</li>
->>>>>>> 56c7618cb7512d1353322b9f044adc6ee39e49fa
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li>@Html.ActionLink("Carrito", "Carrito", "Carrito")</li>
-                    <li class="navbar-text">¡Hola, @User.Identity.Name!</li>
-                    <li>@Html.ActionLink("Cerrar Sesión", "Logout", "Login")</li>
+                    @{
+                        if (String.IsNullOrEmpty(User.Identity.Name))
+                        {
+                            <li>@Html.ActionLink("Iniciar Sesión", "Index", "Login")</li>
+                        }
+                        else
+                        {
+                            <li class="navbar-text">¡Hola, @User.Identity.Name!</li>
+
+                            <li>@Html.ActionLink("Cerrar Sesión", "Logout", "Login")</li>
+                        }
+                    }
                 </ul>
             </div>
         </div>

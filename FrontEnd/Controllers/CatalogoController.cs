@@ -40,5 +40,18 @@ namespace FrontEnd.Controllers
 
             return View(mapeo.mapearPaPVM(producto));
         }
+        [HttpPost]
+        public ActionResult Detalles(ProductoViewModel productoVM)
+        {
+            Session["carrito"] = productoVM;
+            return View("Index");
+        }
+
+        public ActionResult Carrito()
+        {
+            
+
+            return View();
+        }
     }
 }

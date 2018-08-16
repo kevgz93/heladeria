@@ -4,12 +4,14 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="9e4f649adcf14c9e84fcc56bfdfdfa5e" Name="Diagram1">
+      <Diagram DiagramId="6201fe9bcb914c99bbeac882a56dffa0" Name="Diagram1">
         <EntityTypeShape EntityType="HeladeriaModel.Role" Width="1.5" PointX="0.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="HeladeriaModel.sysdiagram" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="HeladeriaModel.T_anulaciones" Width="1.5" PointX="5.25" PointY="6" IsExpanded="true" />
+        <EntityTypeShape EntityType="HeladeriaModel.T_Consultas" Width="1.5" PointX="4.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="HeladeriaModel.T_detalle_factura" Width="1.5" PointX="5.25" PointY="9.75" IsExpanded="true" />
         <EntityTypeShape EntityType="HeladeriaModel.T_facturas" Width="1.5" PointX="3" PointY="7.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="HeladeriaModel.T_personas" Width="1.5" PointX="0.75" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="HeladeriaModel.T_personas" Width="1.5" PointX="0.75" PointY="4.25" IsExpanded="true" />
         <EntityTypeShape EntityType="HeladeriaModel.T_productos" Width="1.5" PointX="3" PointY="11.25" IsExpanded="true" />
         <EntityTypeShape EntityType="HeladeriaModel.T_proveedores" Width="1.5" PointX="0.75" PointY="11.75" IsExpanded="true" />
         <EntityTypeShape EntityType="HeladeriaModel.User" Width="1.5" PointX="3" PointY="3.625" IsExpanded="true" />
@@ -21,7 +23,6 @@
         <AssociationConnector Association="HeladeriaModel.FK_Users_T_personas" ManuallyRouted="false" />
         <AssociationConnector Association="HeladeriaModel.FK_T_productos_T_proveedores" ManuallyRouted="false" />
         <AssociationConnector Association="HeladeriaModel.UsersInRoles" ManuallyRouted="false" />
-        <EntityTypeShape EntityType="HeladeriaModel.T_Consultas" Width="1.5" PointX="3.375" PointY="0.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

@@ -34,9 +34,6 @@ namespace FrontEnd.Controllers
             var userDetails = userBLL.getUser(userModel.UserName, userModel.Password);
 
 
-
-
-
             if (userDetails == null)
             {
                 userModel.LoginErrorMessage = "Nombre de Usuario o Password Incorrectos";
@@ -45,9 +42,6 @@ namespace FrontEnd.Controllers
             else
             {
 
-                //Against AD
-                //http://www.benramey.com/2014/10/20/active-directory-authentication-in-asp-net-mvc-5-with-forms-authentication-and-group-based-authorization/
-                //http://www.beansoftware.com/ASP.NET-Tutorials/Forms-Authentication-Active-Directory.aspx
                 Session["userID"] = userDetails.UserId;
                 Session["userName"] = userDetails.UserName;
                 var authTicket = new FormsAuthenticationTicket(userDetails.UserName, true, 100000);
@@ -63,9 +57,10 @@ namespace FrontEnd.Controllers
         {
             int userId = (int)Session["userID"];
             Session.Abandon();
-            return RedirectToAction("Index", "Login");
+            FormsAuthentication.SignOut();
+            return RedirectToAction("Index", "Home");
         }
 
-       
+
     }
 }
