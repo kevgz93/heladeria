@@ -243,7 +243,6 @@
       <Parameter Name="userName" Mode="In" Type="String" />
       <Parameter Name="roleName" Mode="In" Type="String" />
     </FunctionImport>
-<<<<<<< HEAD
     <FunctionImport Name="sp_AddUsersInRoles">
       <Parameter Name="roleId" Mode="In" Type="Int32" />
       <Parameter Name="userId" Mode="In" Type="Int32" />
@@ -252,9 +251,7 @@
       <Parameter Name="userId" Mode="In" Type="Int32" />
       <Parameter Name="roleID" Mode="In" Type="Int32" />
     </FunctionImport>
-=======
     <EntitySet Name="T_Consultas" EntityType="HeladeriaModel.T_Consultas" />
->>>>>>> 56c7618cb7512d1353322b9f044adc6ee39e49fa
   </EntityContainer>
   <EntityType Name="T_Consultas">
     <Key>

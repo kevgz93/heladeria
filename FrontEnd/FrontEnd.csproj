@@ -234,14 +234,13 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Login\Index.cshtml" />
     <Content Include="Views\Catalogo\Index.cshtml" />
-<<<<<<< HEAD
     <Content Include="Views\Persona\Index.cshtml" />
     <Content Include="Views\Persona\Create.cshtml" />
     <Content Include="Views\Persona\Edit.cshtml" />
-=======
+
     <Content Include="Views\Catalogo\Detalles.cshtml" />
     <Content Include="Views\Home\Contacto.cshtml" />
->>>>>>> 56c7618cb7512d1353322b9f044adc6ee39e49fa
+
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -108,10 +108,8 @@
     <FunctionImportMapping FunctionImportName="sp_getRolesForUser" FunctionName="HeladeriaModel.Store.sp_getRolesForUser" />
     <FunctionImportMapping FunctionImportName="sp_getUsuariosRole" FunctionName="HeladeriaModel.Store.sp_getUsuariosRole" />
     <FunctionImportMapping FunctionImportName="sp_isUserInRole" FunctionName="HeladeriaModel.Store.sp_isUserInRole" />
-<<<<<<< HEAD
     <FunctionImportMapping FunctionImportName="sp_AddUsersInRoles" FunctionName="HeladeriaModel.Store.sp_AddUsersInRoles" />
     <FunctionImportMapping FunctionImportName="sp_updateRoleByUser" FunctionName="HeladeriaModel.Store.sp_updateRoleByUser" />
-=======
     <EntitySetMapping Name="T_Consultas">
       <EntityTypeMapping TypeName="HeladeriaModel.T_Consultas">
         <MappingFragment StoreEntitySet="T_Consultas">
@@ -123,6 +121,5 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
->>>>>>> 56c7618cb7512d1353322b9f044adc6ee39e49fa
   </EntityContainerMapping>
 </Mapping>
