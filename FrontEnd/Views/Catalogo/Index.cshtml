@@ -36,6 +36,7 @@
                         </h4>
                         <p>@Html.DisplayFor(modelItem => item.descripcion)</p>
                         <p>@Html.ActionLink("Detalles", "Detalles", new { id = item.codigo })</p>
+                        <p>@Html.ActionLink("Agregar al carrito", "Agregar", new { id = item.codigo })</p>
                     </div>
                 </div>
             </div>

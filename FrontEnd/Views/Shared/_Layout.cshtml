@@ -28,7 +28,7 @@
                     <li>@Html.ActionLink("Contactenos", "Contacto", "Home")</li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    <li>@Html.ActionLink("Carrito", "Carrito", "Carrito")</li>
+                    <li>@Html.ActionLink("Carrito " + @Session["count"], "Index", "Carrito")</li>
                     @{
                         if (String.IsNullOrEmpty(User.Identity.Name))
                         {
