@@ -22,14 +22,34 @@
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
                     <li>@Html.ActionLink("Catalogo", "Index", "Catalogo")</li>
-                    <li>@Html.ActionLink("Usuarios", "Index", "Persona")</li>
 
-                    <li>@Html.ActionLink("Contactenos", "Contacto", "Home")</li>
+                    @if (ViewContext.HttpContext.User.IsInRole("Administrador"))
+                    {
+                        <li>@Html.ActionLink("Usuarios", "Index", "Persona")</li>
+                        <li>@Html.ActionLink("Productos", "Index", "Producto")</li>
+                        <li>@Html.ActionLink("Proveedores", "Index", "Proveedor")</li>
+                    }
+
+
+
+                   
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    <li>@Html.ActionLink("Carrito", "Carrito", "Carrito")</li>
-                    <li class="navbar-text">¡Hola, @User.Identity.Name!</li>
-                    <li>@Html.ActionLink("Cerrar Sesión", "Logout", "Login")</li>
+
+                    <li>@Html.ActionLink("Contactenos", "Contacto", "Home")</li>
+                    <li>@Html.ActionLink("Carrito " + @Session["count"], "Index", "Carrito")</li>
+                    @{
+                        if (String.IsNullOrEmpty(User.Identity.Name))
+                        {
+                            <li>@Html.ActionLink("Iniciar Sesión", "Index", "Login")</li>
+                        }
+                        else
+                        {
+                            <li class="navbar-text">¡Hola, @User.Identity.Name!</li>
+
+                            <li>@Html.ActionLink("Cerrar Sesión", "Logout", "Login")</li>
+                        }
+                    }
                 </ul>
             </div>
         </div>

@@ -7,10 +7,9 @@
 <h2>Detalles</h2>
 
 <div>
-    <h4>ProductoViewModel</h4>
     <hr />
     <div class="col-sm-6">
-        <img width="200px" src="@Url.Content("~/Imagenes/producto" + @Html.ValueFor(model => model.codigo) +".jpg")" />
+        <img width="200px" src="@Url.Content("~/Imagenes/Productos/producto" + @Html.ValueFor(model => model.codigo) +".jpg")" />
     </div>
     <div class="col-sm-6">
         <dl class="dl-horizontal">
@@ -66,6 +65,6 @@
     </div>
 </div>
 <p>
-    @Html.ActionLink("Agregar al carrito", "Carrito", new { Model }) |
+    @Html.ActionLink("Agregar al carrito", "Agregar", new { id = Model.codigo }) |
     @Html.ActionLink("Back to List", "Index")
 </p>

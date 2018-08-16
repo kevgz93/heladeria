@@ -63,9 +63,9 @@
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
-    <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Web" />
     <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Web.Routing" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Configuration" />
@@ -158,10 +158,13 @@
     <Compile Include="App_Start\FilterConfig2.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\RouteConfig2.cs" />
+    <Compile Include="Controllers\CarritoController.cs" />
     <Compile Include="Controllers\CatalogoController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\PersonaController.cs" />
+    <Compile Include="Controllers\ProductoController.cs" />
+    <Compile Include="Controllers\ProveedorController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -170,7 +173,9 @@
     <Compile Include="Models\Mapeos.cs" />
     <Compile Include="Models\PersonaViewModel.cs" />
     <Compile Include="Models\ProductoViewModel.cs" />
+    <Compile Include="Models\ProveedorViewModel.cs" />
     <Compile Include="Models\RoleViewModel.cs" />
+    <Compile Include="Models\Sexos.cs" />
     <Compile Include="Models\UserViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -191,15 +196,16 @@
     <Content Include="Imagenes\heladeria6.jpg" />
     <Content Include="Imagenes\heladeria5.jpg" />
     <Content Include="Imagenes\lenegre.jpg" />
-    <Content Include="Imagenes\Producto1.jpg" />
-    <Content Include="Imagenes\Producto2.jpg" />
-    <Content Include="Imagenes\Producto3.jpg" />
-    <Content Include="Imagenes\Producto4.jpg" />
-    <Content Include="Imagenes\Producto5.jpg" />
-    <Content Include="Imagenes\Producto6.jpg" />
-    <Content Include="Imagenes\Producto7.jpg" />
-    <Content Include="Imagenes\Producto8.jpg" />
-    <Content Include="Imagenes\Producto9.jpg" />
+    <Content Include="Imagenes\Productos\Producto1002.jpg" />
+    <Content Include="Imagenes\Productos\Producto1003.jpg" />
+    <Content Include="Imagenes\Productos\Producto1004.jpg" />
+    <Content Include="Imagenes\Productos\Producto1005.jpg" />
+    <Content Include="Imagenes\Productos\Producto1006.jpg" />
+    <Content Include="Imagenes\Productos\Producto1007.jpg" />
+    <Content Include="Imagenes\Productos\Producto1008.jpg" />
+    <Content Include="Imagenes\Productos\Producto1009.jpg" />
+    <Content Include="Imagenes\Productos\Producto1010.jpg" />
+    <Content Include="Imagenes\Productos\Producto1011.jpg" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -237,10 +243,20 @@
     <Content Include="Views\Persona\Index.cshtml" />
     <Content Include="Views\Persona\Create.cshtml" />
     <Content Include="Views\Persona\Edit.cshtml" />
-
     <Content Include="Views\Catalogo\Detalles.cshtml" />
     <Content Include="Views\Home\Contacto.cshtml" />
-
+    <Content Include="Views\Home\Registro.cshtml" />
+    <Content Include="Views\Carrito\Index.cshtml" />
+    <Content Include="Views\Proveedor\Index.cshtml" />
+    <Content Include="Views\Proveedor\Create.cshtml" />
+    <Content Include="Views\Proveedor\Edit.cshtml" />
+    <Content Include="Views\Proveedor\Details.cshtml" />
+    <Content Include="Views\Proveedor\Delete.cshtml" />
+    <Content Include="Views\Producto\Index.cshtml" />
+    <Content Include="Views\Producto\Create.cshtml" />
+    <Content Include="Views\Producto\Edit.cshtml" />
+    <Content Include="Views\Producto\Details.cshtml" />
+    <Content Include="Views\Producto\Delete.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

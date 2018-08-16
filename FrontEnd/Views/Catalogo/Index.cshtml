@@ -28,14 +28,15 @@
         {
             <div class="col-sm-4 col-lg-4 col-md-4">
                 <div class="thumbnail">
-                    <img src="@Url.Content("~/Imagenes/producto" + @Html.ValueFor(modelItem => item.codigo) +".jpg")" alt="">
+                    <img src="@Url.Content("~/Imagenes/Productos/producto" + @Html.ValueFor(modelItem => item.codigo) +".jpg")" alt="">
                     <div class="caption">
                         <h4 class="pull-right">₡ @Html.DisplayFor(modelItem => item.precio)</h4>
                         <h4>
-                            <a>@Html.DisplayFor(modelItem => item.nombre)</a>
+                            <p>@Html.DisplayFor(modelItem => item.nombre)</p>
                         </h4>
                         <p>@Html.DisplayFor(modelItem => item.descripcion)</p>
                         <p>@Html.ActionLink("Detalles", "Detalles", new { id = item.codigo })</p>
+                        <p>@Html.ActionLink("Agregar al carrito", "Agregar", new { id = item.codigo })</p>
                     </div>
                 </div>
             </div>

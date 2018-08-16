@@ -21,7 +21,7 @@ namespace UnitTests
             usuario.nombre = "Andres";
             usuario.apellido1 = "Zuñiga";
             usuario.apellido2 = "Umaña";
-            usuario.cedula = "207820023";
+            usuario.cedula = "207822023";
             usuario.telefono = "85484223";
             usuario.correo = "andrezu1998@hotmail.es";
             usuario.sexo = "M";

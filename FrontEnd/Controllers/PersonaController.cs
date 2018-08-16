@@ -144,6 +144,12 @@ namespace FrontEnd.Controllers
         {
             List<PersonaViewModel> personas;
             List<T_personas> Lista_personas = personaBLL.GetAll();
+            if(Lista_personas == null)
+            {
+                personas = new List<PersonaViewModel>();
+                TempData["msg"] = "<script>alert('There's no users to show');</script>";
+                return View(personas);
+            }
             List<User> Lista_users = userBLL.getAll();
             personas = MapeoToPersonaVM(Lista_personas, Lista_users);
             return View(personas);

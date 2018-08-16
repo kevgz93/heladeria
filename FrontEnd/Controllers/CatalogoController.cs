@@ -40,5 +40,35 @@ namespace FrontEnd.Controllers
 
             return View(mapeo.mapearPaPVM(producto));
         }
+        
+        public ActionResult Agregar(int id)
+        {
+            T_productos producto = new T_productos();
+            producto = productoBLL.Get(id);
+
+            if (Session["cart"] == null)
+            {
+                List<ProductoViewModel> li = new List<ProductoViewModel>();
+
+                li.Add(mapeo.mapearPaPVM(producto));
+                Session["cart"] = li;
+                ViewBag.cart = li.Count();
+
+
+                Session["count"] = 1;
+
+
+            }
+            else
+            {
+                List<ProductoViewModel> li = (List<ProductoViewModel>)Session["cart"];
+                li.Add(mapeo.mapearPaPVM(producto));
+                Session["cart"] = li;
+                ViewBag.cart = li.Count();
+                Session["count"] = Convert.ToInt32(Session["count"]) + 1;
+
+            }
+            return RedirectToAction("Index", "Catalogo");
+        }
     }
 }
