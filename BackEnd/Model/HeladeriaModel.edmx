@@ -629,18 +629,29 @@
             <Parameter Name="userName" Mode="In" Type="String" />
             <Parameter Name="roleName" Mode="In" Type="String" />
           </FunctionImport>
+<<<<<<< HEAD
           <FunctionImport Name="sp_obtenerIdPersona" ReturnType="Collection(Int32)" />
           <FunctionImport Name="sp_ObtieneNumFactura" ReturnType="Collection(Int32)" />
           <FunctionImport Name="sp_renamediagram">
             <Parameter Name="diagramname" Mode="In" Type="String" />
             <Parameter Name="owner_id" Mode="In" Type="Int32" />
             <Parameter Name="new_diagramname" Mode="In" Type="String" />
+=======
+          <FunctionImport Name="sp_AddUsersInRoles">
+            <Parameter Name="roleId" Mode="In" Type="Int32" />
+            <Parameter Name="userId" Mode="In" Type="Int32" />
+>>>>>>> 124c5bbab5b1c016f1f8d9044d3df9f7b59158a7
           </FunctionImport>
           <FunctionImport Name="sp_updateRoleByUser">
             <Parameter Name="userId" Mode="In" Type="Int32" />
             <Parameter Name="roleID" Mode="In" Type="Int32" />
           </FunctionImport>
+<<<<<<< HEAD
           <FunctionImport Name="sp_upgraddiagrams" />
+=======
+          <EntitySet Name="T_Consultas" EntityType="HeladeriaModel.T_Consultas" />
+
+>>>>>>> 124c5bbab5b1c016f1f8d9044d3df9f7b59158a7
         </EntityContainer>
         <ComplexType Name="sp_helpdiagramdefinition_Result">
           <Property Type="Int32" Name="version" Nullable="true" />
@@ -810,11 +821,27 @@
             </ResultMapping>
           </FunctionImportMapping>
           <FunctionImportMapping FunctionImportName="sp_isUserInRole" FunctionName="HeladeriaModel.Store.sp_isUserInRole" />
+<<<<<<< HEAD
           <FunctionImportMapping FunctionImportName="sp_obtenerIdPersona" FunctionName="HeladeriaModel.Store.sp_obtenerIdPersona" />
           <FunctionImportMapping FunctionImportName="sp_ObtieneNumFactura" FunctionName="HeladeriaModel.Store.sp_ObtieneNumFactura" />
           <FunctionImportMapping FunctionImportName="sp_renamediagram" FunctionName="HeladeriaModel.Store.sp_renamediagram" />
           <FunctionImportMapping FunctionImportName="sp_updateRoleByUser" FunctionName="HeladeriaModel.Store.sp_updateRoleByUser" />
           <FunctionImportMapping FunctionImportName="sp_upgraddiagrams" FunctionName="HeladeriaModel.Store.sp_upgraddiagrams" />
+=======
+          <FunctionImportMapping FunctionImportName="sp_AddUsersInRoles" FunctionName="HeladeriaModel.Store.sp_AddUsersInRoles" />
+          <FunctionImportMapping FunctionImportName="sp_updateRoleByUser" FunctionName="HeladeriaModel.Store.sp_updateRoleByUser" />
+          <EntitySetMapping Name="T_Consultas">
+            <EntityTypeMapping TypeName="HeladeriaModel.T_Consultas">
+              <MappingFragment StoreEntitySet="T_Consultas">
+                <ScalarProperty Name="telefono" ColumnName="telefono" />
+                <ScalarProperty Name="email" ColumnName="email" />
+                <ScalarProperty Name="nombre" ColumnName="nombre" />
+                <ScalarProperty Name="consulta" ColumnName="consulta" />
+                <ScalarProperty Name="idConsulta" ColumnName="idConsulta" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+>>>>>>> 124c5bbab5b1c016f1f8d9044d3df9f7b59158a7
         </EntityContainerMapping>
       </Mapping>
     </edmx:Mappings>

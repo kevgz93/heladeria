@@ -239,10 +239,17 @@
     <Content Include="Views\Persona\Index.cshtml" />
     <Content Include="Views\Persona\Create.cshtml" />
     <Content Include="Views\Persona\Edit.cshtml" />
+<<<<<<< HEAD
     <Content Include="Views\Catalogo\Detalles.cshtml" />
     <Content Include="Views\Home\Contacto.cshtml" />
     <Content Include="Views\Catalogo\Carrito.cshtml" />
     <Content Include="Views\Home\Registro.cshtml" />
+=======
+
+    <Content Include="Views\Catalogo\Detalles.cshtml" />
+    <Content Include="Views\Home\Contacto.cshtml" />
+
+>>>>>>> 124c5bbab5b1c016f1f8d9044d3df9f7b59158a7
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
