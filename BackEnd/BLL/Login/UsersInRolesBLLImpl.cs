@@ -35,15 +35,10 @@ namespace BackEnd.BLL.Login
 
             using (context = new HeladeriaContext())
             {
-                result = context.sp_updateRoleByUser(userId, roleId);
+                result = context.sp_updateRoleByUser(roleId, userId);
             }
 
-            if (result == 1)
-            {
-                return true;
-            }
-
-            return false;
+            return true;
         }
     }
 }

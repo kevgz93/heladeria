@@ -31,10 +31,13 @@ namespace FrontEnd.Models
         [Display(Name = "Precio")]
         [Required(ErrorMessage = "No debe dejar el campo en blanco")]
         public double precio { get; set; }
+        [DataType(DataType.Date)]
         public System.DateTime fecha_ingreso { get; set; }
+        [DataType(DataType.Date)]
         public System.DateTime fecha_vencimiento { get; set; }
         public Nullable<int> cantidad { get; set; }
         public string estado { get; set; }
+        [Display(Name = "Proveedor")]
         public int proveedor_id { get; set; }
 
         public virtual ICollection<ProveedorViewModel> Proveedores { get; set; }

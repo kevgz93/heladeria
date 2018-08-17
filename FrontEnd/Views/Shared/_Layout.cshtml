@@ -22,11 +22,7 @@
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
                     <li>@Html.ActionLink("Catalogo", "Index", "Catalogo")</li>
-<<<<<<< HEAD
-=======
 
-                    <li>@Html.ActionLink("Usuarios", "Index", "Persona")</li>
->>>>>>> cab0d77740613d2ce052ba65d0ce27d500e4d8e2
 
                     @if (ViewContext.HttpContext.User.IsInRole("Administrador"))
                     {
@@ -40,11 +36,10 @@
                    
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-<<<<<<< HEAD
+
 
                     <li>@Html.ActionLink("Contactenos", "Contacto", "Home")</li>
-=======
->>>>>>> cab0d77740613d2ce052ba65d0ce27d500e4d8e2
+
                     <li>@Html.ActionLink("Carrito " + @Session["count"], "Index", "Carrito")</li>
                     @{
                         if (String.IsNullOrEmpty(User.Identity.Name))

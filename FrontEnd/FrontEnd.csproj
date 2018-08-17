@@ -196,12 +196,12 @@
     <Content Include="Imagenes\heladeria6.jpg" />
     <Content Include="Imagenes\heladeria5.jpg" />
     <Content Include="Imagenes\lenegre.jpg" />
-    <Content Include="Imagenes\Productos\Producto1002.jpg" />
-    <Content Include="Imagenes\Productos\Producto1003.jpg" />
-    <Content Include="Imagenes\Productos\Producto1004.jpg" />
-    <Content Include="Imagenes\Productos\Producto1005.jpg" />
-    <Content Include="Imagenes\Productos\Producto1006.jpg" />
-    <Content Include="Imagenes\Productos\Producto1007.jpg" />
+    <Content Include="Imagenes\Productos\Producto1.jpg" />
+    <Content Include="Imagenes\Productos\Producto2.jpg" />
+    <Content Include="Imagenes\Productos\Producto3.jpg" />
+    <Content Include="Imagenes\Productos\Producto4.jpg" />
+    <Content Include="Imagenes\Productos\Producto5.jpg" />
+    <Content Include="Imagenes\Productos\Producto6.jpg" />
     <Content Include="Imagenes\Productos\Producto1008.jpg" />
     <Content Include="Imagenes\Productos\Producto1009.jpg" />
     <Content Include="Imagenes\Productos\Producto1010.jpg" />
@@ -247,7 +247,6 @@
     <Content Include="Views\Home\Contacto.cshtml" />
     <Content Include="Views\Home\Registro.cshtml" />
     <Content Include="Views\Carrito\Index.cshtml" />
-<<<<<<< HEAD
     <Content Include="Views\Proveedor\Index.cshtml" />
     <Content Include="Views\Proveedor\Create.cshtml" />
     <Content Include="Views\Proveedor\Edit.cshtml" />
@@ -258,8 +257,6 @@
     <Content Include="Views\Producto\Edit.cshtml" />
     <Content Include="Views\Producto\Details.cshtml" />
     <Content Include="Views\Producto\Delete.cshtml" />
-=======
->>>>>>> cab0d77740613d2ce052ba65d0ce27d500e4d8e2
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

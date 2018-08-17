@@ -4,6 +4,7 @@ using BackEnd.BLL.Personas;
 using BackEnd.BLL;
 using BackEnd.Model;
 using System.Collections.Generic;
+using BackEnd.BLL.Login;
 
 namespace UnitTests
 {
@@ -18,12 +19,12 @@ namespace UnitTests
             IPersonaBLL usuarioBLL = new PersonaBLLImpl();
 
 
-            usuario.nombre = "Andres";
-            usuario.apellido1 = "Zuñiga";
-            usuario.apellido2 = "Umaña";
-            usuario.cedula = "207822023";
-            usuario.telefono = "85484223";
-            usuario.correo = "andrezu1998@hotmail.es";
+            usuario.nombre = "Kevin";
+            usuario.apellido1 = "Guerrero";
+            usuario.apellido2 = "Zamora";
+            usuario.cedula = "115560648";
+            usuario.telefono = "88596802";
+            usuario.correo = "kguerreroz93@gmail.com";
             usuario.sexo = "M";
 
             usuarioBLL.Add(usuario);
@@ -89,6 +90,18 @@ namespace UnitTests
             usuarios = usuarioBLL.gerRolesForUser("kevin");
 
             
+
+        }
+
+        [TestMethod]
+        public void addRoleForUser()
+        {
+            bool result;
+            IUsersInRolesBLL usersInRolesBLL = new UsersInRolesBLLImpl();
+
+            result = usersInRolesBLL.insertar(2, 2);
+
+
 
         }
     }

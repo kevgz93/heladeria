@@ -34,6 +34,10 @@ namespace FrontEnd.Controllers
             var userDetails = userBLL.getUser(userModel.UserName, userModel.Password);
 
 
+            Session.Abandon();
+            FormsAuthentication.SignOut();
+
+
             if (userDetails == null)
             {
                 userModel.LoginErrorMessage = "Nombre de Usuario o Password Incorrectos";
@@ -55,7 +59,7 @@ namespace FrontEnd.Controllers
 
         public ActionResult LogOut()
         {
-            int userId = (int)Session["userID"];
+            //int userId = (int)Session["userID"];
             Session.Abandon();
             FormsAuthentication.SignOut();
             return RedirectToAction("Index", "Home");

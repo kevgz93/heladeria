@@ -182,17 +182,11 @@ namespace FrontEnd.Controllers
             if(result)
             {
                 user = userBLL.getAll().LastOrDefault();
-                result = UsersInRolesBLL.insertar(user.UserId, personaVM.roleId);
+                result = UsersInRolesBLL.insertar( personaVM.roleId, user.UserId);
             }
             else
             {
                 TempData["msg"] = "<script>alert('Error Ocurrs adding user');</script>";
-                return View();
-            }
-
-            if(!result)
-            {
-                TempData["msg"] = "<script>alert('Error Ocurrs adding user in roles');</script>";
                 return View();
             }
             

@@ -83,3 +83,5 @@ C:\Users\Administrator\Desktop\heladeria\UnitTests\obj\Debug\UnitTests.pdb
 C:\Users\Administrator\Desktop\heladeria\UnitTests\obj\Debug\UnitTests.csprojAssemblyReference.cache
 C:\Users\Administrator\Desktop\heladeria\UnitTests\obj\Debug\UnitTests.csproj.CoreCompileInputs.cache
 C:\Users\Administrator\Desktop\heladeria\UnitTests\obj\Debug\UnitTests.csproj.CopyComplete
+C:\Users\Administrator\Desktop\heladeria\UnitTests\bin\Debug\EntityFramework.xml
+C:\Users\Administrator\Desktop\heladeria\UnitTests\bin\Debug\EntityFramework.SqlServer.xml
